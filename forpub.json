@@ -1,0 +1,431 @@
+[
+    {
+        "category": "龙虾集合",
+        "items": [
+            {
+                "title": "OpenClaw",
+                "link": "https://openclaw.ai",
+                "icon": "./icon/openclaw.svg",
+                "tags": ["开源","本地"],
+                "desc": "本地优先的自主个人AI助手，可调用多种大型语言模型。"
+            },
+            {
+                "title": "Kimi Claw",
+                "link": "https://www.kimi.com/bot",
+                "icon": "./icon/kimi.svg",
+                "tags": ["云端"],
+                "desc": "一键部署OpenClaw到云端，自动配置Kimi模型和实用技能库。"
+            },
+            {
+                "title": "MaxClaw",
+                "link": "https://agent.minimaxi.com/max-claw",
+                "icon": "./icon/maxclaw.svg",
+                "tags": ["云端"],
+                "desc": "基于OpenClaw的云端AI助手服务，接入MiniMax模型，无需自备服务器或API Key。"
+            },
+            {
+                "title": "飞书OpenClaw",
+                "link": "https://openclaw.feishu.cn",
+                "icon": "./icon/feishu.svg",
+                "tags": ["云端"],
+                "desc": "一键云端部署，自动接入飞书机器人，提供原版OpenClaw完整能力。"
+            },
+            {
+                "title": "ArkClaw",
+                "link": "https://www.volcengine.com/experience/ark?mode=claw",
+                "icon": "./icon/volcengine.svg",
+                "tags": ["云端"],
+                "desc": "火山引擎云端AI智能体，聚焦个人事务与简单办公任务的自动化。"
+            },
+            {
+                "title": "腾讯QClaw",
+                "link": "https://qclaw.qq.com",
+                "icon": "./icon/qclaw.png",
+                "tags": ["本地"],
+                "desc": "腾讯旗下个人AI助手，可微信远程整理文件、执行复杂任务。"
+            },
+            {
+                "title": "有道LobsterAI",
+                "link": "https://lobsterai.youdao.com",
+                "icon": "./icon/lobsterai.svg",
+                "tags": ["本地"],
+                "desc": "有道旗下AI个人助理，支持手机电脑双端互联，远程操作电脑。"
+            },
+            {
+                "title": "WorkBuddy",
+                "link": "https://www.codebuddy.cn/work/",
+                "icon": "./icon/codebuddy.svg",
+                "tags": ["本地"],
+                "desc": "AI原生桌面智能体工作台，可在手机主流IM下指令，AI自动交付。"
+            },
+            {
+                "title": "360安全龙虾",
+                "link": "https://claw.360.cn",
+                "icon": "./icon/360claw.png",
+                "tags": ["本地"],
+                "desc": "360旗下安全龙虾，国内首个以“安全模式”为核心设计。"
+            },
+            {
+                "title": "EasyClaw",
+                "link": "https://easyclaw.com/zh-cn",
+                "icon": "./icon/easyclaw.png",
+                "tags": ["本地","沙盒"],
+                "desc": "本地沙盒中运行的原生桌面端AI智能体，一键安装免除繁琐配置。"
+            },
+            {
+                "title": "QwenPaw",
+                "link": "https://qwenpaw.agentscope.io",
+                "icon": "./icon/qwenpaw.svg",
+                "tags": ["本地","云端"],
+                "desc": "阿里云旗下协同个人智能体，主打本地/云端双部署、国内平台原生适配。"
+            },
+            {
+                "title": "nexu",
+                "link": "https://nexu.io/zh",
+                "icon": "./icon/nexu.svg",
+                "tags": ["开源","免费"],
+                "desc": "OpenClaw龙虾开源客户端，模型自由选，数据100%本地，完全免费。"
+            }
+        ]
+    },
+    {
+        "category": "常用AI",
+        "items": [
+            {
+                "title": "千问",
+                "link": "https://www.qianwen.com",
+                "icon": "./icon/qwen.svg",
+                "desc": "阿里旗下全能AI助手，基于Qwen最新大模型，支持AI搜索、编程助手等多模态AI。"
+            },
+            {
+                "title": "豆包",
+                "link": "https://www.doubao.com",
+                "icon": "./icon/doubao.svg",
+                "desc": "字节跳动旗下AI智能助手，智能对话问答助手，写作文案翻译编程工具。"
+            },
+            {
+                "title": "Kimi",
+                "link": "https://www.kimi.com",
+                "icon": "./icon/kimi.svg",
+                "desc": "月之暗面旗下AI智能助手，专注于长文本处理领域，会推理解析能深度思考。"
+            },
+            {
+                "title": "元宝",
+                "link": "https://yuanbao.tencent.com",
+                "icon": "./icon/yuanbao.svg",
+                "desc": "腾讯旗下全能AI助手，多种风格写作轻松驾驭、更有人情味、搜索更实用精准。"
+            },
+            {
+                "title": "DeepSeek",
+                "link": "https://chat.deepseek.com",
+                "icon": "./icon/deepseek.svg",
+                "desc": "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务。"
+            },
+            {
+                "title": "ChatGPT",
+                "link": "https://chatgpt.com",
+                "icon": "./icon/chatgpt.svg",
+                "desc": "OpenAI旗下AI聊天机器人，可帮助你获取答案、寻找灵感并提高工作效率。"
+            },
+            {
+                "title": "Grok",
+                "link": "https://grok.com",
+                "icon": "./icon/grok.svg",
+                "desc": "马斯克xAI旗下AI聊天机器人，深度整合X平台、强大的推理和多模态能力。"
+            }
+        ]
+    },
+    {
+        "category": "云服务商",
+        "items": [
+            {
+                "title": "阿里云",
+                "link": "https://www.aliyun.com",
+                "icon": "./icon/aliyun.svg",
+                "desc": "国内主流云服务商，提供ECS、轻量应用服务器、网络存储服务等。"
+            },
+            {
+                "title": "腾讯云",
+                "link": "https://cloud.tencent.com",
+                "icon": "./icon/qcloud.svg",
+                "desc": "国内主流云服务商，提供CVM、轻量应用服务器等云计算服务。"
+            },
+            {
+                "title": "华为云",
+                "link": "https://www.huaweicloud.com",
+                "icon": "./icon/huawei.svg",
+                "desc": "国内云服务商，提供稳定可靠、安全可信、可持续发展的云服务。"
+            },
+            {
+                "title": "火山引擎",
+                "link": "https://www.volcengine.com",
+                "icon": "./icon/volcengine.svg",
+                "desc": "字节跳动旗下的云与AI服务平台。聚焦豆包大模型和AI云原生技术。"
+            },
+            {
+                "title": "京东云",
+                "link": "https://www.jdcloud.com",
+                "icon": "./icon/jdcloud.svg",
+                "desc": "京东旗下云计算品牌，提供公有云、专有云、混合云等基础服务。"
+            },
+            {
+                "title": "天翼云",
+                "link": "https://www.ctyun.cn",
+                "icon": "./icon/ctyun.svg",
+                "desc": "中国电信旗下云计算品牌，提供公有云、私有云、混合云等全栈云服务。"
+            },
+            {
+                "title": "亚马逊AWS",
+                "link": "https://aws.amazon.com/cn/",
+                "icon": "./icon/aws.svg",
+                "desc": "AWS是全球最全面、应用最广泛的云，从全球数据中心提供功能齐全的服务。"
+            },
+            {
+                "title": "微软Azure",
+                "link": "https://azure.microsoft.com/zh-cn",
+                "icon": "./icon/microsoft.svg",
+                "desc": "Microsoft Azure是一个云计算平台，提供云服务、分析、存储、网络和AI。"
+            },
+            {
+                "title": "Google Cloud",
+                "link": "https://cloud.google.com/?hl=zh_cn",
+                "icon": "./icon/google-cloud.svg",
+                "desc": "Google旗下云计算品牌，提供安全、数据管理、混合云和多云方面的服务。"
+            },
+            {
+                "title": "Cloudflare",
+                "link": "https://www.cloudflare.com/zh-cn/",
+                "icon": "./icon/cloudflare.svg",
+                "desc": "赛博菩萨，提供CDN内容分发网络和边缘计算，提升网站访问速度并抵御网络攻击。"
+            }
+        ]
+    },
+    {
+        "category": "域名注册",
+        "items": [
+            {
+                "title": "阿里云万网",
+                "link": "https://wanwang.aliyun.com",
+                "icon": "./icon/aliyun.svg",
+                "desc": "阿里云旗下品牌，中国最大的域名注册服务提供商。"
+            },
+            {
+                "title": "腾讯云DNSPod",
+                "link": "https://www.dnspod.cn",
+                "icon": "./icon/dnspod.svg",
+                "desc": "腾讯云旗下品牌，国内最大的免费DNS解析产品提供商。"
+            },
+            {
+                "title": "西部数码",
+                "link": "https://www.west.cn",
+                "icon": "./icon/west.svg",
+                "desc": "国内老牌域名注册商，域名注册保有量全国第二。"
+            },
+            {
+                "title": "GoDaddy",
+                "link": "https://www.godaddy.com/zh-sg",
+                "icon": "./icon/godaddy.svg",
+                "desc": "全球最大的域名注册商，续费价格贵，适合注重品牌的国际化业务。"
+            },
+            {
+                "title": "Cloudflare Registrar",
+                "link": "https://domains.cloudflare.com/zh-cn",
+                "icon": "./icon/cloudflare.svg",
+                "desc": "成本价域名注册续期，无附加费用，但部分域名后缀价格昂贵。"
+            },
+            {
+                "title": "Dynadot",
+                "link": "https://www.dynadot.com/zh",
+                "icon": "./icon/dynadot.svg",
+                "desc": "低价域名注册商，优秀的域名抢注和批量域名管理功能。"
+            },
+            {
+                "title": "聚名",
+                "link": "https://www.juming.com",
+                "icon": "./icon/juming.svg",
+                "desc": "国内知名域名交易平台，提供到期域名抢注、域名买卖交易等。"
+            },
+            {
+                "title": "易名",
+                "link": "https://www.ename.com",
+                "icon": "./icon/ename.svg",
+                "desc": "国内知名域名交易平台，提供域名买卖交易、经纪中介交易等。"
+            },
+            {
+                "title": "name.com",
+                "link": "https://www.name.com/zh-cn/",
+                "icon": "./icon/name.svg",
+                "desc": "成熟老牌海外域名注册商，以管理简单、界面清爽著称。"
+            }
+        ]
+    },
+    {
+        "category": "建站程序",
+        "items": [
+            {
+                "title": "WordPress",
+                "link": "https://cn.wordpress.org",
+                "icon": "./icon/wordpress.svg",
+                "tags": ["博客","开源","PHP"],
+               "desc": "全球数百万网站的首选开源发布平台。"
+            },
+            {
+                "title": "Halo",
+                "link": "https://www.halo.run",
+                "icon": "./icon/halo.svg",
+                "tags": ["博客","开源","Java‌"],
+                "desc": "现代化、开源的内容管理系统。"
+            },
+            {
+                "title": "Z-Blog",
+                "link": "https://www.zblogcn.com",
+                "icon": "./icon/zblog.svg",
+                "tags": ["博客","开源","PHP","ASP"],
+                "desc": "开源免费、小巧强大的博客程序。"
+            },
+            {
+                "title": "Typecho",
+                "link": "https://typecho.org",
+                "icon": "./icon/typecho.svg",
+                "tags": ["博客","开源","PHP"],
+                "desc": "轻量级开源博客程序。"
+            },
+            {
+                "title": "Discuz! X",
+                "link": "https://gitee.com/Discuz/DiscuzX",
+                "icon": "./icon/discuz.svg",
+                "tags": ["论坛","开源","PHP"],
+                "desc": "国内最知名的论坛社区开源软件 Discuz!"
+            },
+            {
+                "title": "Ghost",
+                "link": "https://github.com/tryghost/Ghost",
+                "icon": "./icon/ghost.png",
+                "tags": ["博客","开源","JavaScript"],
+                "desc": "为博客和内容创作设计的‌开源内容管理系统。"
+            }
+        ]
+    },
+    {
+        "category": "管理面板",
+        "items": [
+            {
+                "title": "宝塔面板",
+                "link": "https://www.bt.cn",
+                "icon": "./icon/bt.svg",
+                "tags": ["Linux","Windows","免费/收费"],
+               "desc": "国内知名的服务器运维管理面板。"
+            },
+            {
+                "title": "1Panel",
+                "link": "https://1panel.cn",
+                "icon": "./icon/1panel.svg",
+                "tags": ["Linux","免费/收费"],
+                "desc": "现代化的Linux服务器运维管理面板。"
+            },
+            {
+                "title": "GMSSH",
+                "link": "https://www.gm.cn",
+                "icon": "./icon/gmssh.svg",
+                "tags": ["Linux","免费/收费"],
+                "desc": "桌面级的Linux SSH可视化管理工具。"
+            },
+            {
+                "title": "AMH面板",
+                "link": "https://amh.sh",
+                "icon": "./icon/amh.svg",
+                "tags": ["Linux","免费/收费"],
+                "desc": "真正纯净无广告的服务器管理面板。"
+            },
+            {
+                "title": "小皮面板",
+                "link": "https://www.xp.cn",
+                "icon": "./icon/xp.svg",
+                "tags": ["Linux","免费"],
+                "desc": "老牌公益Linux服务器运维管理工具。"
+            }
+        ]
+    },
+    {
+        "category": "操作系统",
+        "items": [
+            {
+                "title": "Debian",
+                "link": "https://www.debian.org",
+                "icon": "./icon/debian.svg",
+                "tags": ["企业","服务器"],
+                "desc": "稳定安全著称的开源服务器操作系统。"
+            },
+            {
+                "title": "Ubuntu",
+                "link": "https://cn.ubuntu.com",
+                "icon": "./icon/ubuntu.svg",
+                "tags": ["企业","个人"],
+                "desc": "流行的Linux桌面发行版与服务器系统。"
+            },
+            {
+                "title": "Fedora",
+                "link": "https://www.fedoraproject.org/zh-Hans/",
+                "icon": "./icon/fedora.svg",
+                "tags": ["开发者","个人"],
+                "desc": "适合开发者的前沿技术试验操作系统。"
+            },
+            {
+                "title": "AlmaLinux",
+                "link": "https://almalinux.org/zh-hans/",
+                "icon": "./icon/almalinux.svg",
+                "tags": ["企业","服务器"],
+                "desc": "免费替代CentOS的企业级操作系统。"
+            },
+            {
+                "title": "Rocky Linux",
+                "link": "https://rockylinux.org/zh-CN",
+                "icon": "./icon/rockylinux.svg",
+                "tags": ["企业","服务器"],
+                "desc": "CentOS平替的开源企业级操作系统。"
+            },
+            {
+                "title": "Manjaro",
+                "link": "https://manjaro.org",
+                "icon": "./icon/manjaro.svg",
+                "tags": ["桌面","开发者"],
+                "desc": "灵活易用的桌面级Linux操作系统。"
+            },
+            {
+                "title": "Linux Mint",
+                "link": "https://www.linuxmint.com",
+                "icon": "./icon/linuxmint.svg",
+                "tags": ["桌面","开发者"],
+                "desc": "接近Windows体验的桌面Linux操作系统。"
+            },
+            {
+                "title": "Arch Linux",
+                "link": "https://archlinux.org",
+                "icon": "./icon/archlinux.svg",
+                "tags": ["桌面","开发者"],
+                "desc": "轻量且灵活的极客Linux操作系统。"
+            },
+            {
+                "title": "Kali Linux",
+                "link": "https://www.kali.org",
+                "icon": "./icon/kali.svg",
+                "tags": ["桌面","网安"],
+                "desc": "安全领域专用的渗透测试神器。"
+            },
+            {
+                "title": "Alpine Linux",
+                "link": "https://www.alpinelinux.org",
+                "icon": "./icon/alpinelinux.svg",
+                "tags": ["企业","云计算","Docker"],
+                "desc": "适合嵌入式和容器化的轻量级Linux。"
+            },
+            {
+                "title": "deepin",
+                "link": "https://www.deepin.org",
+                "icon": "./icon/deepin.svg",
+                "tags": ["桌面"],
+                "desc": "开源国产的桌面Linux操作系统。"
+            }
+        ]
+    }
+]

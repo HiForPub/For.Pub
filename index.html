@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>为你导航 for.pub - 独立开发者的实用工具箱！</title>
+<meta name="keywords" content="For.Pub,为你导航,网址导航,导航网站">
+<meta name="description" content="为你导航（ For.Pub ）是一个免费开源的程序开发实用网址导航。收集国内外对程序员开发方面的优质网站，其中包括常用的开发工具和实用网址等。不断更新收录优秀的开发者网址导航。">
+<meta name="author" content="Fanly">
+<link rel="canonical" href="https://for.pub">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<style>
+:root {
+  --primary: #2c8b30;       /* 主色调 (按钮、标题、激活态) */
+  --bg-base: #f5f6fa;       /* 基础背景 (页面、页脚) */
+  --text-main: #666666;     /* 主要文字颜色 */
+  --text-light: #999999;    /* 次要文字/描述颜色 */
+  --bg-tag: color-mix(in srgb, var(--primary) 10%, white); /* 标签背景：主色调的 10% 透明度 */
+}
+*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+html{height:100%;scrollbar-width:none}
+body{display:flex;flex-direction:column;min-height:100%;background:var(--bg-base);color:var(--text-main)}
+header{display:flex;justify-content:space-between;align-items:center;width:100%;max-width:1600px;padding:16px 20px;margin:0 auto}
+header h1{font-size:22px;font-weight:400}
+header h1 a{display:flex;gap:8px;color:var(--primary)}
+header h1 img{width:22px}
+header nav{display:flex;align-items:center;gap:20px}
+header nav a:last-child{background:var(--primary);color:#fff;padding:6px 12px;border-radius:6px}
+main{display:flex;flex-direction:column;gap:38px;flex:1;padding:50px 20px}
+main h2{text-align:center;font-size:clamp(20px,5vw,32px);background:linear-gradient(90deg,color-mix(in srgb,var(--primary),white 50%),color-mix(in srgb,var(--primary),black 20%));-webkit-background-clip:text;color:transparent;cursor:pointer}
+main input{width:100%;max-width:600px;font-size:16px;border:none;outline:none;margin:0 auto;background:#fff;border-radius:30px;padding:16px 26px;box-shadow:0 5px 20px rgba(0,0,0,0.05)}
+main input::placeholder{color:var(--text-light)}
+main .tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;overflow-x:auto}
+main .tabs::-webkit-scrollbar{display:none}
+main .tab{flex-shrink:0;padding:6px 14px;border-radius:20px;background:#fff;cursor:pointer;font-size:16px;border:1px solid #f1f1f1}
+main .tab.active{background:var(--primary);color:#fff}
+.content{display:flex;flex-direction:column;gap:36px}
+section{width:100%;max-width:1420px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+section h3{display:flex;align-items:center;width:100%;color:var(--primary);font-size:20px;font-weight:500}
+section h3::after{content:"";flex:1;height:1px;margin-left:15px;background-image:linear-gradient(to right,rgba(108,99,255,0.1),transparent);background-repeat:no-repeat;background-size:100% 100%}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+@media(max-width:599px){.cards{grid-template-columns:1fr}}
+.cards a{position:relative;display:flex;flex-direction:column;gap:10px;color:inherit;background:#fff;padding:14px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s}
+@media(hover:hover){.cards a:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.08)}}
+.cards a:active{transform:scale(0.98)}
+.cards img{width:26px;height:26px;border-radius:4px;flex-shrink:0}
+.cards h4{display:flex;align-items:center;gap:12px;font-size:16px}
+.cards .tags{display:flex;flex-wrap:wrap;gap:6px}
+.cards em{width:max-content;font-size:12px;padding:2px 8px;border-radius:10px;background:var(--bg-tag,#f0edff);color:var(--primary)}
+.cards p{font-size:14px;color:var(--text-light);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.empty{text-align:center;padding:40px 0;color:var(--text-light);font-size:14px}
+footer{background:var(--bg-base);padding:20px;text-align:center;line-height:2}
+footer a{color:var(--primary)}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1><a href="/"><img src="./favicon.svg">为你导航</a></h1>
+    <nav><a>投稿</a><a>部署</a></nav>
+</header>
+
+<main>
+    <h2 onclick="location.reload()">独立开发者 实用工具箱</h2>
+    <input id="search" placeholder="搜索标题 / 内容 / 域名" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    <div class="tabs" id="tabs"></div>
+    <div class="content" id="content"></div> 
+</main>
+
+<footer>
+    <p>声明：导航链接为第三方网站，请注意甄别！</p>
+    <p>© 2026 <a href="https://for.pub">为你导航</a></p>
+</footer>
+
+<script>
+let link = "./forpub.json" // 加载的 JSON 数据
+let data = []
+let ALLTEXT = "全部"
+let categories = [ALLTEXT]
+let active = ALLTEXT
+let keyword = ""
+
+// 测试数据[可删]
+data = [
+    {
+        category: "建站程序",
+        items: [
+            {
+                title: "WordPress",
+                link: "https://cn.wordpress.org",
+                icon: "./icon/wordpress.svg",
+                tags: ["博客","开源","PHP"],
+               desc: "全球数百万网站的首选开源发布平台。",
+            },
+            {
+                title: "Halo",
+                link: "https://www.halo.run",
+                icon: "./icon/halo.svg",
+                tags: ["博客","开源","Java‌"],
+                desc: "现代化、开源的内容管理系统。",
+            },
+            {
+                title: "Z-Blog",
+                link: "https://www.zblogcn.com",
+                icon: "./icon/zblog.svg",
+                tags: ["博客","开源","PHP","ASP"],
+                desc: "开源免费、小巧强大的博客程序。",
+            },
+            {
+                title: "Typecho",
+                link: "https://typecho.org",
+                icon: "./icon/typecho.svg",
+                tags: ["博客","开源","PHP"],
+                desc: "轻量级开源博客程序。",
+            },
+            {
+                title: "Discuz! X",
+                link: "https://gitee.com/Discuz/DiscuzX",
+                icon: "./icon/discuz.svg",
+                tags: ["论坛","开源","PHP"],
+                desc: "国内最知名的论坛社区开源软件 Discuz!",
+            },
+            {
+                title: "Ghost",
+                link: "https://github.com/tryghost/Ghost",
+                icon: "./icon/ghost.png",
+                tags: ["博客","开源","JavaScript"],
+                desc: "为博客和内容创作设计的‌开源内容管理系统。",
+            },
+        ]
+    },
+    {
+        category: "管理面板",
+        items: [
+            {
+                title: "宝塔面板",
+                link: "https://www.bt.cn",
+                icon: "./icon/bt.svg",
+                tags: ["Linux","Windows","免费/收费"],
+               desc: "国内知名的服务器运维管理面板。",
+            },
+            {
+                title: "1Panel",
+                link: "https://1panel.cn",
+                icon: "./icon/1panel.svg",
+                tags: ["Linux","免费/收费"],
+                desc: "现代化的Linux服务器运维管理面板。",
+            },
+            {
+                title: "GMSSH",
+                link: "https://www.gm.cn",
+                icon: "./icon/gmssh.svg",
+                tags: ["Linux","免费/收费"],
+                desc: "桌面级的Linux SSH可视化管理工具。",
+            },
+            {
+                title: "AMH面板",
+                link: "https://amh.sh",
+                icon: "./icon/amh.svg",
+                tags: ["Linux","免费/收费"],
+                desc: "真正纯净无广告的服务器管理面板。",
+            },
+            {
+                title: "小皮面板",
+                link: "https://www.xp.cn",
+                icon: "./icon/xp.svg",
+                tags: ["Linux","免费"],
+                desc: "老牌公益Linux服务器运维管理工具。",
+            },
+        ]
+    },
+    {
+        category: "操作系统",
+        items: [
+            {
+                title: "Debian",
+                link: "https://www.debian.org",
+                icon: "./icon/debian.svg",
+                tags: ["企业","服务器"],
+                desc: "稳定安全著称的开源服务器操作系统。",
+            },
+            {
+                title: "Ubuntu",
+                link: "https://cn.ubuntu.com",
+                icon: "./icon/ubuntu.svg",
+                tags: ["企业","个人"],
+                desc: "流行的Linux桌面发行版与服务器系统。",
+            },
+            {
+                title: "Fedora",
+                link: "https://www.fedoraproject.org/zh-Hans/",
+                icon: "./icon/fedora.svg",
+                tags: ["开发者","个人"],
+                desc: "适合开发者的前沿技术试验操作系统。",
+            },
+            {
+                title: "AlmaLinux",
+                link: "https://almalinux.org/zh-hans/",
+                icon: "./icon/almalinux.svg",
+                tags: ["企业","服务器"],
+                desc: "免费替代CentOS的企业级操作系统。",
+            },
+            {
+                title: "Rocky Linux",
+                link: "https://rockylinux.org/zh-CN",
+                icon: "./icon/rockylinux.svg",
+                tags: ["企业","服务器"],
+                desc: "CentOS平替的开源企业级操作系统。",
+            },
+            {
+                title: "Manjaro",
+                link: "https://manjaro.org",
+                icon: "./icon/manjaro.svg",
+                tags: ["桌面","开发者"],
+                desc: "灵活易用的桌面级Linux操作系统。",
+            },
+            {
+                title: "Linux Mint",
+                link: "https://www.linuxmint.com",
+                icon: "./icon/linuxmint.svg",
+                tags: ["桌面","开发者"],
+                desc: "接近Windows体验的桌面Linux操作系统。",
+            },
+            {
+                title: "Arch Linux",
+                link: "https://archlinux.org",
+                icon: "./icon/archlinux.svg",
+                tags: ["桌面","开发者"],
+                desc: "轻量且灵活的极客Linux操作系统。",
+            },
+            {
+                title: "Kali Linux",
+                link: "https://www.kali.org",
+                icon: "./icon/kali.svg",
+                tags: ["桌面","网安"],
+                desc: "安全领域专用的渗透测试神器。",
+            },
+            {
+                title: "Alpine Linux",
+                link: "https://www.alpinelinux.org",
+                icon: "./icon/alpinelinux.svg",
+                tags: ["企业","云计算","Docker"],
+                desc: "适合嵌入式和容器化的轻量级Linux。",
+            },
+            {
+                title: "deepin",
+                link: "https://www.deepin.org",
+                icon: "./icon/deepin.svg",
+                tags: ["桌面"],
+                desc: "开源国产的桌面Linux操作系统。",
+            },
+        ]
+    },
+]
+
+// 🔒 XSS 防护函数
+function escapeHTML(str){
+    return String(str).replace(/[&<>"']/g, s => ({
+        "&":"&amp;",
+        "<":"&lt;",
+        ">":"&gt;",
+        '"':"&quot;",
+        "'":"&#39;"
+    }[s]))
+}
+
+// 🌐 URL 校验
+function isValidURL(url){
+    try{
+        new URL(url)
+        return true
+    }catch{
+        return false
+    }
+}
+
+// 获取数据 JSON
+async function loadData(){
+    try {
+        const res = await fetch(link);
+        if(res.ok){
+            const json = await res.json();
+            if(json && json.length) data = json; // 覆盖测试数据
+        }
+    } catch(err){
+        console.warn(`无法加载外部 JSON ${link}，使用默认数据`, err);
+    }
+    categories = [ALLTEXT, ...data.map(d=>d.category)];
+    active = decodeURIComponent(location.hash.replace("#", "")) || ALLTEXT
+    initTabs();
+    render();
+}
+
+// 初始化 tabs
+function initTabs(){
+    const tabsEl = document.getElementById("tabs")
+    tabsEl.innerHTML = ""
+    categories.forEach(c=>{
+        const el = document.createElement("div")
+        el.className = "tab"
+        el.innerText = c
+        if(c===active) el.classList.add("active")
+        el.onclick = ()=>{
+            active=c
+            history.replaceState(null, "", c === ALLTEXT ? location.pathname : `#${encodeURIComponent(c)}`)
+            document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"))
+            el.classList.add("active")
+            render()
+        }
+        tabsEl.appendChild(el)
+    })
+}
+
+// 搜索框事件
+document.getElementById("search").oninput = (e)=>{
+    keyword = e.target.value.toLowerCase()
+    render()
+}
+
+// 渲染函数
+const content = document.getElementById("content")
+function render(){
+    content.innerHTML = ""
+    let hasResult = false
+    const seen = new Set()
+
+    data.forEach(group=>{
+        if(active !== ALLTEXT && group.category !== active) return
+
+        const filtered = group.items
+            .filter(item => item.title && item.link && isValidURL(item.link))
+            .filter(item => {
+                if(seen.has(item.link)) return false
+                seen.add(item.link)
+                return true
+            })
+            .filter(item =>
+                item.title.toLowerCase().includes(keyword) ||
+                (item.desc || "").toLowerCase().includes(keyword) ||
+                (item.link || "").toLowerCase().includes(keyword) ||
+                (Array.isArray(item.tags) ? item.tags.some(tag => tag.toLowerCase().includes(keyword)) : (item.tags || "").toLowerCase().includes(keyword))
+            )
+
+        if(filtered.length===0) return
+        hasResult = true
+
+        const section = document.createElement("section")
+        section.innerHTML = `
+            <h3>${escapeHTML(group.category)}</h3>
+            <div class="cards">
+                ${filtered.map(item=>`
+                    <a href="${item.link}" target="_blank" rel="noopener">
+                        <h4>${item.icon ? `<img src="${item.icon}" onerror="this.style.display='none'">` : ""} ${escapeHTML(item.title)}</h4>
+                        ${item.tags ? `<div class="tags"> ${Array.isArray(item.tags) ? item.tags.map(tag => `<em>${escapeHTML(tag)}</em>`).join("") : (item.tags ? `<em>${escapeHTML(item.tags)}</em>` : "") } </div>` : ""}
+                        ${item.desc ? `<p>${escapeHTML(item.desc)}</p>` : ""}
+                    </a>
+                `).join("")}
+            </div>
+        `
+        content.appendChild(section)
+    })
+
+    if(!hasResult){
+        content.innerHTML = `<div class="empty">没有相关内容</div>`
+    }
+}
+
+// 页面加载时获取 JSON
+loadData()
+</script>
+</body>
+</html>
