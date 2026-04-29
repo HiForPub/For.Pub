@@ -31,11 +31,32 @@
                 "desc": "一键云端部署，自动接入飞书机器人，提供原版OpenClaw完整能力。"
             },
             {
+                "title": "JVS Claw",
+                "link": "https://jvsclaw.aliyun.com/",
+                "icon": "./icon/jvsclaw.svg",
+                "tags": ["云端","本地"],
+                "desc": "阿里云旗下安全养虾，云端&本地均可一键部署，三端互通实时同步。"
+            },
+            {
                 "title": "ArkClaw",
                 "link": "https://www.volcengine.com/experience/ark?mode=claw",
                 "icon": "./icon/volcengine.svg",
                 "tags": ["云端"],
                 "desc": "火山引擎云端AI智能体，聚焦个人事务与简单办公任务的自动化。"
+            },
+            {
+                "title": "Xiaomi MiMo Claw",
+                "link": "https://aistudio.xiaomimimo.com/",
+                "icon": "./icon/xiaomimimo.svg",
+                "tags": ["云端"],
+                "desc": "小米旗下AI助手，自研‌MiMo大模型，集成WebOffice在线文档预览。"
+            },
+            {
+                "title": "AstronClaw",
+                "link": "https://agent.xfyun.cn/astron-claw/",
+                "icon": "./icon/astronclaw.png",
+                "tags": ["云端"],
+                "desc": "讯飞星辰Agent智能体开发平台，助力开发者快速搭建生产级智能体。"
             },
             {
                 "title": "腾讯QClaw",
@@ -52,11 +73,18 @@
                 "desc": "有道旗下AI个人助理，支持手机电脑双端互联，远程操作电脑。"
             },
             {
+                "title": "AutoClaw澳龙",
+                "link": "https://autoglm.zhipuai.cn/autoclaw/",
+                "icon": "./icon/autoclaw.svg",
+                "tags": ["本地"],
+                "desc": "智谱旗下AI助手，让复杂任务在飞书对话框中自动达成。"
+            },
+            {
                 "title": "WorkBuddy",
                 "link": "https://www.codebuddy.cn/work/",
                 "icon": "./icon/codebuddy.svg",
                 "tags": ["本地"],
-                "desc": "AI原生桌面智能体工作台，可在手机主流IM下指令，AI自动交付。"
+                "desc": "腾讯AI原生桌面智能体工作台，可在手机主流IM下指令，AI自动交付。"
             },
             {
                 "title": "360安全龙虾",
@@ -70,7 +98,7 @@
                 "link": "https://easyclaw.com/zh-cn",
                 "icon": "./icon/easyclaw.png",
                 "tags": ["本地","沙盒"],
-                "desc": "本地沙盒中运行的原生桌面端AI智能体，一键安装免除繁琐配置。"
+                "desc": "猎豹移动旗下AI智能体，提供本地个人版及云端企业版。"
             },
             {
                 "title": "QwenPaw",
