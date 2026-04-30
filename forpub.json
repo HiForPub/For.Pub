@@ -132,6 +132,12 @@
                 "desc": "字节跳动旗下AI智能助手，智能对话问答助手，写作文案翻译编程工具。"
             },
             {
+                "title": "DeepSeek",
+                "link": "https://chat.deepseek.com",
+                "icon": "./icon/deepseek.svg",
+                "desc": "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务。"
+            },
+            {
                 "title": "Kimi",
                 "link": "https://www.kimi.com",
                 "icon": "./icon/kimi.svg",
@@ -144,10 +150,16 @@
                 "desc": "腾讯旗下全能AI助手，多种风格写作轻松驾驭、更有人情味、搜索更实用精准。"
             },
             {
-                "title": "DeepSeek",
-                "link": "https://chat.deepseek.com",
-                "icon": "./icon/deepseek.svg",
-                "desc": "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务。"
+                "title": "文心一言",
+                "link": "https://yiyan.baidu.com",
+                "icon": "./icon/wenxin.svg",
+                "desc": "百度旗下AI助手，覆盖公文写作、学术论文、创意策划、代码编程等丰富场景。"
+            },
+            {
+                "title": "智谱清言",
+                "link": "https://chatglm.cn",
+                "icon": "./icon/chatglm.svg",
+                "desc": "智谱清言是基于GLM-5的全能AI助手，支持精通对话、写作与编程。"
             },
             {
                 "title": "ChatGPT",
@@ -160,6 +172,18 @@
                 "link": "https://grok.com",
                 "icon": "./icon/grok.svg",
                 "desc": "马斯克xAI旗下AI聊天机器人，深度整合X平台、强大的推理和多模态能力。"
+            },
+            {
+                "title": "Gemini",
+                "link": "https://gemini.google.com/",
+                "icon": "./icon/gemini.svg",
+                "desc": "Google旗下生成式AI聊天机器人，帮助写作、规划和开展头脑风暴等。"
+            },
+            {
+                "title": "Claude",
+                "link": "https://claude.ai",
+                "icon": "./icon/claude.svg",
+                "desc": "Anthropic旗下AI平台，在涉及语言、推理、分析、编码等任务中表现出色。"
             }
         ]
     },
