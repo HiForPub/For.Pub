@@ -169,6 +169,13 @@
                 "desc": "智谱清言是基于GLM-5的全能AI助手，支持精通对话、写作与编程。"
             },
             {
+                "title": "扣子Coze",
+                "link": "https://www.coze.cn",
+                "icon": "./icon/coze.svg",
+                "tags": ["AI办公"],
+                "desc": "字节跳动旗下AI办公助手，助力财经分析、市场营销等多场景办公任务自动化。"
+            },
+            {
                 "title": "ChatGPT",
                 "link": "https://chatgpt.com",
                 "icon": "./icon/chatgpt.svg",
@@ -204,11 +211,39 @@
                 "desc": "结合生成式AI与即时网络搜索的对话式搜索引擎，被定位为“答案引擎”。"
             },
             {
+                "title": "Suno",
+                "link": "https://suno.com",
+                "icon": "./icon/suno.svg",
+                "tags": ["AI音乐"],
+                "desc": "AI音乐创作平台， 通过文字描述直接生成包含人声、旋律和伴奏的原创完整歌曲。"
+            },
+            {
+                "title": "Cursor",
+                "link": "https://cursor.com",
+                "icon": "./icon/cursor.svg",
+                "tags": ["AI编程"],
+                "desc": "AI编辑器和编码智能体， 深度集成大语言模型，提升程序开发效率。"
+            },
+            {
+                "title": "TRAE",
+                "link": "https://www.trae.cn",
+                "icon": "./icon/trae.svg",
+                "tags": ["AI编程"],
+                "desc": "字节跳动AI原生集成开发环境，支持中文自然语言一键生成完整代码框架。"
+            },
+            {
                 "title": "Ollama",
                 "link": "https://ollama.com",
                 "icon": "./icon/ollama.svg",
                 "tags": ["本地","开源"],
                 "desc": "‌开源跨平台大模型工具‌，在本地运行、管理和与大型语言模型进行交互。"
+            },
+            {
+                "title": "Chatbox",
+                "link": "https://chatboxai.app/zh",
+                "icon": "./icon/chatboxai.svg",
+                "tags": ["AI客户端","免费开源"],
+                "desc": "开源免费的全平台AI客户端，支持众多先进的AI模型和API。"
             }
         ]
     },
@@ -299,6 +334,18 @@
                 "desc": "国内老牌域名注册商，域名注册保有量全国第二。"
             },
             {
+                "title": "聚名",
+                "link": "https://www.juming.com",
+                "icon": "./icon/juming.svg",
+                "desc": "国内知名域名交易平台，提供到期域名抢注、域名买卖交易等。"
+            },
+            {
+                "title": "易名",
+                "link": "https://www.ename.com",
+                "icon": "./icon/ename.svg",
+                "desc": "国内知名域名交易平台，提供域名买卖交易、经纪中介交易等。"
+            },
+            {
                 "title": "GoDaddy",
                 "link": "https://www.godaddy.com/zh-sg",
                 "icon": "./icon/godaddy.svg",
@@ -315,18 +362,6 @@
                 "link": "https://www.dynadot.com/zh",
                 "icon": "./icon/dynadot.svg",
                 "desc": "低价域名注册商，优秀的域名抢注和批量域名管理功能。"
-            },
-            {
-                "title": "聚名",
-                "link": "https://www.juming.com",
-                "icon": "./icon/juming.svg",
-                "desc": "国内知名域名交易平台，提供到期域名抢注、域名买卖交易等。"
-            },
-            {
-                "title": "易名",
-                "link": "https://www.ename.com",
-                "icon": "./icon/ename.svg",
-                "desc": "国内知名域名交易平台，提供域名买卖交易、经纪中介交易等。"
             },
             {
                 "title": "name.com",
