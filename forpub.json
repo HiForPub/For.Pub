@@ -123,67 +123,92 @@
                 "title": "千问",
                 "link": "https://www.qianwen.com",
                 "icon": "./icon/qwen.svg",
+                "tags": ["聊天机器人"],
                 "desc": "阿里旗下全能AI助手，基于Qwen最新大模型，支持AI搜索、编程助手等多模态AI。"
             },
             {
                 "title": "豆包",
                 "link": "https://www.doubao.com",
                 "icon": "./icon/doubao.svg",
+                "tags": ["聊天机器人"],
                 "desc": "字节跳动旗下AI智能助手，智能对话问答助手，写作文案翻译编程工具。"
             },
             {
                 "title": "DeepSeek",
                 "link": "https://chat.deepseek.com",
                 "icon": "./icon/deepseek.svg",
+                "tags": ["聊天机器人"],
                 "desc": "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务。"
             },
             {
                 "title": "Kimi",
                 "link": "https://www.kimi.com",
                 "icon": "./icon/kimi.svg",
+                "tags": ["智能助手"],
                 "desc": "月之暗面旗下AI智能助手，专注于长文本处理领域，会推理解析能深度思考。"
             },
             {
                 "title": "元宝",
                 "link": "https://yuanbao.tencent.com",
                 "icon": "./icon/yuanbao.svg",
+                "tags": ["个人助理"],
                 "desc": "腾讯旗下全能AI助手，多种风格写作轻松驾驭、更有人情味、搜索更实用精准。"
             },
             {
-                "title": "文心一言",
-                "link": "https://yiyan.baidu.com",
+                "title": "百度文心助手",
+                "link": "https://chat.baidu.com",
                 "icon": "./icon/wenxin.svg",
+                "tags": ["办公学习"],
                 "desc": "百度旗下AI助手，覆盖公文写作、学术论文、创意策划、代码编程等丰富场景。"
             },
             {
                 "title": "智谱清言",
                 "link": "https://chatglm.cn",
                 "icon": "./icon/chatglm.svg",
+                "tags": ["AI助手"],
                 "desc": "智谱清言是基于GLM-5的全能AI助手，支持精通对话、写作与编程。"
             },
             {
                 "title": "ChatGPT",
                 "link": "https://chatgpt.com",
                 "icon": "./icon/chatgpt.svg",
+                "tags": ["聊天机器人"],
                 "desc": "OpenAI旗下AI聊天机器人，可帮助你获取答案、寻找灵感并提高工作效率。"
             },
             {
                 "title": "Grok",
                 "link": "https://grok.com",
                 "icon": "./icon/grok.svg",
+                "tags": ["个人助理"],
                 "desc": "马斯克xAI旗下AI聊天机器人，深度整合X平台、强大的推理和多模态能力。"
             },
             {
                 "title": "Gemini",
                 "link": "https://gemini.google.com/",
                 "icon": "./icon/gemini.svg",
+                "tags": ["个人助理"],
                 "desc": "Google旗下生成式AI聊天机器人，帮助写作、规划和开展头脑风暴等。"
             },
             {
                 "title": "Claude",
                 "link": "https://claude.ai",
                 "icon": "./icon/claude.svg",
+                "tags": ["聊天机器人"],
                 "desc": "Anthropic旗下AI平台，在涉及语言、推理、分析、编码等任务中表现出色。"
+            },
+            {
+                "title": "Perplexity",
+                "link": "https://www.perplexity.ai",
+                "icon": "./icon/perplexity.svg",
+                "tags": ["AI搜索"],
+                "desc": "结合生成式AI与即时网络搜索的对话式搜索引擎，被定位为“答案引擎”。"
+            },
+            {
+                "title": "Ollama",
+                "link": "https://ollama.com",
+                "icon": "./icon/ollama.svg",
+                "tags": ["本地","开源"],
+                "desc": "‌开源跨平台大模型工具‌，在本地运行、管理和与大型语言模型进行交互。"
             }
         ]
     },
