@@ -455,6 +455,62 @@
                 "icon": "./icon/xp.svg",
                 "tags": ["Linux","免费"],
                 "desc": "老牌公益Linux服务器运维管理工具。"
+            },
+            {
+                "title": "Portainer‌",
+                "link": "https://www.portainer.io",
+                "icon": "./icon/portainer.svg",
+                "tags": ["Docker面板","K8s面板"],
+                "desc": "最经典的Docker图形化管理工具。"
+            },
+            {
+                "title": "DPanel",
+                "link": "https://dpanel.cc",
+                "icon": "./icon/dpanel.svg",
+                "tags": ["Docker面板"],
+                "desc": "国产开源Docker容器可视化面板系统。"
+            },
+            {
+                "title": "Docker Desktop",
+                "link": "https://www.docker.com/products/docker-desktop/",
+                "icon": "./icon/docker.svg",
+                "tags": ["Docker面板"],
+                "desc": "Docker官方本地容器化开发工具。‌‌‌"
+            },
+            {
+                "title": "Dockge",
+                "link": "https://dockge.kuma.pet",
+                "icon": "./icon/dockge.svg",
+                "tags": ["Docker面板"],
+                "desc": "为Docker Compose设计的栈管理器。"
+            },
+            {
+                "title": "Headlamp",
+                "link": "https://headlamp.dev",
+                "icon": "./icon/headlamp.svg",
+                "tags": ["K8s面板","Kubernetes"],
+                "desc": "Kubernetes官方可扩展的图形用户界面。"
+            },
+            {
+                "title": "KubePi",
+                "link": "https://github.com/1Panel-dev/KubePi",
+                "icon": "./icon/kubepi.svg",
+                "tags": ["K8s面板","Kubernetes"],
+                "desc": "1Panel开发的现代化的开源Kubernetes面板。"
+            },
+            {
+                "title": "Lens",
+                "link": "https://lenshq.io",
+                "icon": "./icon/lenshq.svg",
+                "tags": ["K8s面板","Kubernetes"],
+                "desc": "强大好用的Kubernetes图形化管理工具。"
+            },
+            {
+                "title": "Rancher",
+                "link": "https://www.rancher.cn",
+                "icon": "./icon/rancher.svg",
+                "tags": ["K8s面板","Kubernetes"],
+                "desc": "开源企业级多集群Kubernetes管理平台。"
             }
         ]
     },
