@@ -601,5 +601,52 @@
                 "desc": "开源国产的桌面Linux操作系统。"
             }
         ]
+    },
+    {
+        "category": "免费资源",
+        "items": [
+            {
+                "title": "GitHub",
+                "link": "https://github.com",
+                "icon": "./icon/github.svg",
+                "tags": ["代码托管"],
+                "desc": "微软旗下的开源代码托管平台，提供版本控制、协作开发和项目管理功能。"
+            },
+            {
+                "title": "码云Gitee",
+                "link": "https://gitee.com",
+                "icon": "./icon/gitee.svg",
+                "tags": ["代码托管"],
+                "desc": "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管。"
+            },
+            {
+                "title": "iconfont",
+                "link": "https://www.iconfont.cn",
+                "icon": "./icon/iconfont.svg",
+                "tags": ["矢量图标"],
+                "desc": "阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。"
+            },
+            {
+                "title": "Unsplash",
+                "link": "https://unsplash.com",
+                "icon": "./icon/unsplash.svg",
+                "tags": ["摄影图库","免费商用"],
+                "desc": "高品质摄影图片库，以其照片的艺术感、高清画质和自由的商业使用许可而闻名。"
+            },
+            {
+                "title": "Pixabay",
+                "link": "https://pixabay.com",
+                "icon": "./icon/pixabay.svg",
+                "tags": ["素材网站","免费商用"],
+                "desc": "无版权图片和素材网站，提供高品质图片、视频、向量图和音乐素材。"
+            },
+            {
+                "title": "Pexels",
+                "link": "https://www.pexels.com",
+                "icon": "./icon/pexels.svg",
+                "tags": ["图片视频","免费商用"],
+                "desc": "免费素材图片和视频，100%免费，任何地方使用无需注明归属。"
+            }
+        ]
     }
 ]
