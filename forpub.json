@@ -309,6 +309,12 @@
                 "link": "https://www.cloudflare.com/zh-cn/",
                 "icon": "./icon/cloudflare.svg",
                 "desc": "赛博菩萨，提供CDN内容分发网络和边缘计算，提升网站访问速度并抵御网络攻击。"
+            },
+            {
+                "title": "EdgeOne",
+                "link": "https://edgeone.ai/zh",
+                "icon": "./icon/edgeone.svg",
+                "desc": "腾讯云旗下国际边缘节点，全球首个支持中国访问的免费CDN。"
             }
         ]
     },
@@ -426,7 +432,7 @@
                 "link": "https://www.bt.cn",
                 "icon": "./icon/bt.svg",
                 "tags": ["Linux","Windows","免费/收费"],
-               "desc": "国内知名的服务器运维管理面板。"
+                "desc": "国内知名的服务器运维管理面板。"
             },
             {
                 "title": "1Panel",
