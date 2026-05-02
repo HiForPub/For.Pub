@@ -225,6 +225,13 @@
                 "desc": "AI编辑器和编码智能体， 深度集成大语言模型，提升程序开发效率。"
             },
             {
+                "title": "GitHub Copilot",
+                "link": "https://github.com/copilot",
+                "icon": "./icon/copilot.svg",
+                "tags": ["AI编程助手"],
+                "desc": "微软与OpenAI联合推出的AI编程工具， 能理解注释自动生成代码，提高开发效率。"
+            },
+            {
                 "title": "TRAE",
                 "link": "https://www.trae.cn",
                 "icon": "./icon/trae.svg",
@@ -618,6 +625,13 @@
                 "icon": "./icon/gitee.svg",
                 "tags": ["代码托管"],
                 "desc": "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管。"
+            },
+            {
+                "title": "Visual Studio Code",
+                "link": "https://code.visualstudio.com",
+                "icon": "./icon/vscode.svg",
+                "tags": ["AI编辑器"],
+                "desc": "微软开发的免费、开源、跨平台且极其轻量级的代码编辑器。"
             },
             {
                 "title": "iconfont",
