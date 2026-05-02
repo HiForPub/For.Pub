@@ -28,19 +28,19 @@ header h1 img{width:22px}
 header nav{display:flex;align-items:center;gap:20px}
 header nav a{color:var(--text-main)}
 header nav a:last-child{background:var(--primary);color:#fff;padding:6px 12px;border-radius:6px}
-main{display:flex;flex-direction:column;gap:38px;flex:1;padding:50px 20px}
-main h2{text-align:center;font-size:clamp(20px,5vw,32px);background:linear-gradient(90deg,color-mix(in srgb,var(--primary),white 50%),color-mix(in srgb,var(--primary),black 20%));-webkit-background-clip:text;color:transparent;cursor:pointer}
-main input{width:100%;max-width:600px;font-size:16px;border:none;outline:none;margin:0 auto;background:#fff;border-radius:30px;padding:16px 26px;box-shadow:0 5px 20px rgba(0,0,0,0.05)}
+main{width:100%;max-width:1480px;margin:0 auto;padding:50px 20px;display:flex;flex-direction:column;align-items:center;gap:42px;flex:1}
+main h2{font-size:clamp(20px,5vw,32px);background:linear-gradient(90deg,color-mix(in srgb,var(--primary),white 50%),color-mix(in srgb,var(--primary),black 20%));-webkit-background-clip:text;color:transparent;cursor:pointer}
+main input{width:100%;max-width:600px;font-size:16px;border:none;outline:none;background:#fff;border-radius:30px;padding:16px 26px;box-shadow:0 5px 20px rgba(0,0,0,0.05)}
 main input::placeholder{color:var(--text-light)}
 main .tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;overflow-x:auto}
 main .tabs::-webkit-scrollbar{display:none}
 main .tab{flex-shrink:0;padding:6px 14px;border-radius:20px;background:#fff;cursor:pointer;font-size:16px;border:1px solid #f1f1f1}
 main .tab.active{background:var(--primary);color:#fff}
-.content{display:flex;flex-direction:column;gap:36px}
-section{width:100%;max-width:1420px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.content{width:100%;display:flex;flex-direction:column;gap:36px}
+section{width:100%;display:flex;flex-direction:column;gap:22px}
 section h3{display:flex;align-items:center;width:100%;color:var(--primary);font-size:20px;font-weight:500}
 section h3::after{content:"";flex:1;height:1px;margin-left:15px;background-image:linear-gradient(to right,rgba(108,99,255,0.1),transparent);background-repeat:no-repeat;background-size:100% 100%}
-.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
 @media(max-width:599px){.cards{grid-template-columns:1fr}}
 .cards a{position:relative;display:flex;flex-direction:column;gap:10px;color:inherit;background:#fff;padding:14px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s}
 @media(hover:hover){.cards a:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.08)}}
@@ -53,6 +53,8 @@ section h3::after{content:"";flex:1;height:1px;margin-left:15px;background-image
 .empty{text-align:center;padding:40px 0;color:var(--text-light);font-size:14px}
 footer{background:var(--bg-base);padding:20px;text-align:center;line-height:2}
 footer a{color:var(--primary)}
+section,.tabs{opacity:0;transform:translateY(10px);animation:fadeIn .25s ease forwards}
+@keyframes fadeIn {to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 
@@ -83,11 +85,39 @@ let categories = [ALLTEXT]
 let active = ALLTEXT
 let keyword = ""
 
-// 测试数据[可删]
+// 默认数据 / 置顶推荐
 data = [
     {
-        category: "建站程序",
+        category: "热门推荐",
         items: [
+            {
+                title: "OpenClaw",
+                link: "https://openclaw.ai",
+                icon: "./icon/openclaw.svg",
+                tags: ["本地部署","开源"],
+                desc: "本地优先的自主个人AI龙虾，可调用多种大型语言模型。",
+            },
+            {
+                title: "DeepSeek",
+                link: "https://chat.deepseek.com",
+                icon: "./icon/deepseek.svg",
+                tags: ["聊天机器人"],
+                desc: "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务。"
+            },
+            {
+                title: "Ollama",
+                link: "https://ollama.com",
+                icon: "./icon/ollama.svg",
+                tags: ["本地部署","开源"],
+                desc: "‌开源跨平台大模型工具‌，在本地运行、管理和与大型语言模型进行交互。"
+            },
+            {
+                title: "Chatbox",
+                link: "https://chatboxai.app/zh",
+                icon: "./icon/chatboxai.svg",
+                tags: ["AI客户端","免费开源"],
+                desc: "开源免费的全平台AI客户端，支持众多先进的AI模型和API。"
+            },
             {
                 title: "WordPress",
                 link: "https://cn.wordpress.org",
@@ -96,161 +126,53 @@ data = [
                desc: "全球数百万网站的首选开源发布平台。",
             },
             {
-                title: "Halo",
-                link: "https://www.halo.run",
-                icon: "./icon/halo.svg",
-                tags: ["博客","开源","Java‌"],
-                desc: "现代化、开源的内容管理系统。",
+                title: "Cloudflare",
+                link: "https://www.cloudflare.com/zh-cn/",
+                icon: "./icon/cloudflare.svg",
+                tags: ["CDN","免费","赛博菩萨"],
+                desc: "免费CDN内容分发网络和边缘计算，提升网站访问速度并抵御网络攻击。"
             },
             {
-                title: "Z-Blog",
-                link: "https://www.zblogcn.com",
-                icon: "./icon/zblog.svg",
-                tags: ["博客","开源","PHP","ASP"],
-                desc: "开源免费、小巧强大的博客程序。",
+                title: "EdgeOne",
+                link: "https://edgeone.ai/zh",
+                icon: "./icon/edgeone.svg",
+                tags: ["CDN","免费"],
+                desc: "腾讯云旗下国际边缘节点，全球首个支持中国访问的免费CDN。"
             },
-            {
-                title: "Typecho",
-                link: "https://typecho.org",
-                icon: "./icon/typecho.svg",
-                tags: ["博客","开源","PHP"],
-                desc: "轻量级开源博客程序。",
-            },
-            {
-                title: "Discuz! X",
-                link: "https://gitee.com/Discuz/DiscuzX",
-                icon: "./icon/discuz.svg",
-                tags: ["论坛","开源","PHP"],
-                desc: "国内最知名的论坛社区开源软件 Discuz!",
-            },
-            {
-                title: "Ghost",
-                link: "https://github.com/tryghost/Ghost",
-                icon: "./icon/ghost.png",
-                tags: ["博客","开源","JavaScript"],
-                desc: "为博客和内容创作设计的‌开源内容管理系统。",
-            },
-        ]
-    },
-    {
-        category: "管理面板",
-        items: [
-            {
-                title: "宝塔面板",
-                link: "https://www.bt.cn",
-                icon: "./icon/bt.svg",
-                tags: ["Linux","Windows","免费/收费"],
-               desc: "国内知名的服务器运维管理面板。",
-            },
-            {
-                title: "1Panel",
-                link: "https://1panel.cn",
-                icon: "./icon/1panel.svg",
-                tags: ["Linux","免费/收费"],
-                desc: "现代化的Linux服务器运维管理面板。",
-            },
-            {
-                title: "GMSSH",
-                link: "https://www.gm.cn",
-                icon: "./icon/gmssh.svg",
-                tags: ["Linux","免费/收费"],
-                desc: "桌面级的Linux SSH可视化管理工具。",
-            },
-            {
-                title: "AMH面板",
-                link: "https://amh.sh",
-                icon: "./icon/amh.svg",
-                tags: ["Linux","免费/收费"],
-                desc: "真正纯净无广告的服务器管理面板。",
-            },
-            {
-                title: "小皮面板",
-                link: "https://www.xp.cn",
-                icon: "./icon/xp.svg",
-                tags: ["Linux","免费"],
-                desc: "老牌公益Linux服务器运维管理工具。",
-            },
-        ]
-    },
-    {
-        category: "操作系统",
-        items: [
             {
                 title: "Debian",
                 link: "https://www.debian.org",
                 icon: "./icon/debian.svg",
-                tags: ["企业","服务器"],
-                desc: "稳定安全著称的开源服务器操作系统。",
+                tags: ["企业级","Linux系统"],
+                desc: "稳定安全著称的开源服务器操作系统。"
             },
             {
-                title: "Ubuntu",
-                link: "https://cn.ubuntu.com",
-                icon: "./icon/ubuntu.svg",
-                tags: ["企业","个人"],
-                desc: "流行的Linux桌面发行版与服务器系统。",
+                title: "GitHub",
+                link: "https://github.com",
+                icon: "./icon/github.svg",
+                tags: ["代码托管"],
+                desc: "微软旗下的开源代码托管平台，提供版本控制、协作开发和项目管理功能。"
             },
             {
-                title: "Fedora",
-                link: "https://www.fedoraproject.org/zh-Hans/",
-                icon: "./icon/fedora.svg",
-                tags: ["开发者","个人"],
-                desc: "适合开发者的前沿技术试验操作系统。",
+                title: "码云Gitee",
+                link: "https://gitee.com",
+                icon: "./icon/gitee.svg",
+                tags: ["代码托管"],
+                desc: "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管。"
             },
             {
-                title: "AlmaLinux",
-                link: "https://almalinux.org/zh-hans/",
-                icon: "./icon/almalinux.svg",
-                tags: ["企业","服务器"],
-                desc: "免费替代CentOS的企业级操作系统。",
+                title: "iconfont",
+                link: "https://www.iconfont.cn",
+                icon: "./icon/iconfont.svg",
+                tags: ["矢量图标"],
+                desc: "阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。"
             },
             {
-                title: "Rocky Linux",
-                link: "https://rockylinux.org/zh-CN",
-                icon: "./icon/rockylinux.svg",
-                tags: ["企业","服务器"],
-                desc: "CentOS平替的开源企业级操作系统。",
-            },
-            {
-                title: "Manjaro",
-                link: "https://manjaro.org",
-                icon: "./icon/manjaro.svg",
-                tags: ["桌面","开发者"],
-                desc: "灵活易用的桌面级Linux操作系统。",
-            },
-            {
-                title: "Linux Mint",
-                link: "https://www.linuxmint.com",
-                icon: "./icon/linuxmint.svg",
-                tags: ["桌面","开发者"],
-                desc: "接近Windows体验的桌面Linux操作系统。",
-            },
-            {
-                title: "Arch Linux",
-                link: "https://archlinux.org",
-                icon: "./icon/archlinux.svg",
-                tags: ["桌面","开发者"],
-                desc: "轻量且灵活的极客Linux操作系统。",
-            },
-            {
-                title: "Kali Linux",
-                link: "https://www.kali.org",
-                icon: "./icon/kali.svg",
-                tags: ["桌面","网安"],
-                desc: "安全领域专用的渗透测试神器。",
-            },
-            {
-                title: "Alpine Linux",
-                link: "https://www.alpinelinux.org",
-                icon: "./icon/alpinelinux.svg",
-                tags: ["企业","云计算","Docker"],
-                desc: "适合嵌入式和容器化的轻量级Linux。",
-            },
-            {
-                title: "deepin",
-                link: "https://www.deepin.org",
-                icon: "./icon/deepin.svg",
-                tags: ["桌面"],
-                desc: "开源国产的桌面Linux操作系统。",
+                title: "Unsplash",
+                link: "https://unsplash.com",
+                icon: "./icon/unsplash.svg",
+                tags: ["摄影图库","免费商用"],
+                desc: "高品质摄影图片库，以其照片的艺术感、高清画质和自由的商业使用许可而闻名。"
             },
         ]
     },
@@ -277,21 +199,46 @@ function isValidURL(url){
     }
 }
 
-// 获取数据 JSON
+// 获取数据
+let isLoaded = false; 
 async function loadData(){
+    categories = [ALLTEXT, ...data.map(d=>d.category)];
+    active = decodeURIComponent(location.hash.replace("#", "")) || ALLTEXT;
+    initTabs();
+    render();
+    // 异步追加数据
     try {
         const res = await fetch(link);
         if(res.ok){
             const json = await res.json();
-            if(json && json.length) data = json; // 覆盖测试数据
+            if(json && json.length){
+                data = mergeData(data, json);
+                categories = [...new Set([ALLTEXT, ...data.map(d=>d.category)])];
+                initTabs();
+                render(json);
+            }
         }
     } catch(err){
-        console.warn(`无法加载外部 JSON ${link}，使用默认数据`, err);
+        console.warn(err);
+    } finally {
+        isLoaded = true;
     }
-    categories = [ALLTEXT, ...data.map(d=>d.category)];
-    active = decodeURIComponent(location.hash.replace("#", "")) || ALLTEXT
-    initTabs();
-    render();
+}
+
+// 合并数据
+function mergeData(localData, remoteData) {
+    const map = new Map();
+    for (const group of localData) {
+        if (group && group.category) {
+            map.set(group.category, structuredClone(group));
+        }
+    }
+    for (const group of remoteData) {
+        if (group && group.category) {
+            map.set(group.category, structuredClone(group));
+        }
+    }
+    return [...map.values()];
 }
 
 // 初始化 tabs
@@ -314,20 +261,29 @@ function initTabs(){
     })
 }
 
-// 搜索框事件
+// 搜索
+let searchTimer
 document.getElementById("search").oninput = (e)=>{
-    keyword = e.target.value.toLowerCase()
-    render()
+    const value = e.target.value.toLowerCase()
+    clearTimeout(searchTimer)
+    searchTimer = setTimeout(()=>{
+        keyword = value
+        render()
+    }, 300)
 }
 
 // 渲染函数
 const content = document.getElementById("content")
-function render(){
-    content.innerHTML = ""
+function render(newData){
+    const source = newData || data
+    // 全量渲染，清空
+    if(!newData){
+        content.innerHTML = ""
+    }
     let hasResult = false
     const seen = new Set()
 
-    data.forEach(group=>{
+    source.forEach(group=>{
         if(active !== ALLTEXT && group.category !== active) return
 
         const filtered = group.items
@@ -363,12 +319,11 @@ function render(){
         content.appendChild(section)
     })
 
-    if(!hasResult){
+    if (isLoaded && !hasResult){
         content.innerHTML = `<div class="empty">没有相关内容</div>`
     }
 }
 
-// 页面加载时获取 JSON
 loadData()
 </script>
 </body>
