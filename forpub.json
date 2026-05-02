@@ -377,6 +377,18 @@
                 "desc": "低价域名注册商，优秀的域名抢注和批量域名管理功能。"
             },
             {
+                "title": "Namecheap",
+                "link": "https://www.namecheap.com",
+                "icon": "./icon/namecheap.svg",
+                "desc": "美国域名注册商，以价格低廉、操作简便稳定而闻名。"
+            },
+            {
+                "title": "NameSilo",
+                "link": "https://www.namesilo.com",
+                "icon": "./icon/namesilo.svg",
+                "desc": "美国域名注册商，价格实惠、续费稳定而闻名。"
+            },
+            {
                 "title": "name.com",
                 "link": "https://www.name.com/zh-cn/",
                 "icon": "./icon/name.svg",
