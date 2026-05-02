@@ -21,7 +21,7 @@
 *{margin:0;padding:0;box-sizing:border-box;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 html{height:100%;scrollbar-width:none}
 body{display:flex;flex-direction:column;min-height:100%;background:var(--bg-base);color:var(--text-main)}
-header{display:flex;justify-content:space-between;align-items:center;width:100%;max-width:1600px;padding:16px 20px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;width:100%;max-width:1920px;padding:16px 20px;margin:0 auto}
 header h1{font-size:22px;font-weight:400}
 header h1 a{display:flex;gap:8px;color:var(--primary)}
 header h1 img{width:22px}
@@ -42,7 +42,7 @@ section h3{display:flex;align-items:center;width:100%;color:var(--primary);font-
 section h3::after{content:"";flex:1;height:1px;margin-left:15px;background-image:linear-gradient(to right,rgba(108,99,255,0.1),transparent);background-repeat:no-repeat;background-size:100% 100%}
 .cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
 @media(max-width:599px){.cards{grid-template-columns:1fr}}
-.cards a{position:relative;display:flex;flex-direction:column;gap:10px;color:inherit;background:#fff;padding:14px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s}
+.cards a{display:flex;flex-direction:column;gap:10px;color:inherit;background:#fff;padding:14px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s}
 @media(hover:hover){.cards a:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.08)}}
 .cards a:active{transform:scale(0.98)}
 .cards img{width:26px;height:26px;border-radius:4px;flex-shrink:0}
