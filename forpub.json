@@ -251,6 +251,13 @@
                 "icon": "./icon/chatboxai.svg",
                 "tags": ["AI客户端","免费开源"],
                 "desc": "开源免费的全平台AI客户端，支持众多先进的AI模型和API。"
+            },
+            {
+                "title": "夸克",
+                "link": "https://www.quark.cn",
+                "icon": "./icon/quark.svg",
+                "tags": ["AI浏览器","AI搜索"],
+                "desc": "阿里旗下AI搜索应用，拥有简洁界面、AI功能和丰富工具集。"
             }
         ]
     },
