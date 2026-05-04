@@ -625,6 +625,13 @@
                 "icon": "./icon/deepin.svg",
                 "tags": ["桌面"],
                 "desc": "开源国产的桌面Linux操作系统。"
+            },
+            {
+                "title": "TrueNAS",
+                "link": "https://www.truenas.com",
+                "icon": "./icon/truenas.svg",
+                "tags": ["NAS系统"],
+                "desc": "基于ZFS的免费开源NAS系统。"
             }
         ]
     },
