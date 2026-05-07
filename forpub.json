@@ -115,6 +115,13 @@
                 "desc": "骡子快跑运行在专属云端主机，每次成功运行工作流都会从中学习并进化。"
             },
             {
+                "title": "LobeHub",
+                "link": "https://lobehub.com/zh",
+                "icon": "./icon/lobehub.svg",
+                "tags": ["本地","开源"],
+                "desc": "面向工作与生活的协作式Agent平台，多模型与多模态支持。"
+            },
+            {
                 "title": "nexu",
                 "link": "https://nexu.io/zh",
                 "icon": "./icon/nexu.svg",
