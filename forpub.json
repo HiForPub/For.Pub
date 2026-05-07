@@ -108,11 +108,25 @@
                 "desc": "阿里云旗下协同个人智能体，主打本地/云端双部署、国内平台原生适配。"
             },
             {
+                "title": "MuleRun",
+                "link": "https://mulerun.com/zh-CN",
+                "icon": "./icon/mulerun.svg",
+                "tags": ["云端"],
+                "desc": "骡子快跑运行在专属云端主机，每次成功运行工作流都会从中学习并进化。"
+            },
+            {
                 "title": "nexu",
                 "link": "https://nexu.io/zh",
                 "icon": "./icon/nexu.svg",
                 "tags": ["开源","免费"],
                 "desc": "OpenClaw龙虾开源客户端，模型自由选，数据100%本地，完全免费。"
+            },
+            {
+                "title": "HiClaw",
+                "link": "https://hiclaw.io",
+                "icon": "./icon/hiclaw.svg",
+                "tags": ["本地","开源"],
+                "desc": "开源多Agent协同操作系统，协调多个Worker Agent完成复杂任务。"
             }
         ]
     },
