@@ -660,6 +660,20 @@
                 "icon": "./icon/truenas.svg",
                 "tags": ["NAS系统"],
                 "desc": "基于ZFS的免费开源NAS系统。"
+            },
+            {
+                "title": "openmediavault",
+                "link": "https://www.openmediavault.org",
+                "icon": "./icon/openmediavault.svg",
+                "tags": ["NAS系统"],
+                "desc": "免费开源的轻量级NAS系统。"
+            },
+            {
+                "title": "Unraid",
+                "link": "https://unraid.net",
+                "icon": "./icon/unraid.svg",
+                "tags": ["NAS系统","收费"],
+                "desc": "家庭和小型工作室的NAS系统。"
             }
         ]
     },
