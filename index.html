@@ -30,11 +30,11 @@ header nav a{color:var(--text-main)}
 header nav a:last-child{background:var(--primary);color:#fff;padding:6px 12px;border-radius:6px}
 main{width:100%;max-width:1480px;margin:0 auto;padding:50px 20px;display:flex;flex-direction:column;align-items:center;gap:42px;flex:1}
 main h2{font-size:clamp(20px,5vw,32px);background:linear-gradient(90deg,color-mix(in srgb,var(--primary),white 50%),color-mix(in srgb,var(--primary),black 20%));-webkit-background-clip:text;color:transparent;cursor:pointer}
-main input{width:100%;max-width:600px;font-size:16px;border:none;outline:none;background:#fff;border-radius:30px;padding:16px 26px;box-shadow:0 5px 20px rgba(0,0,0,0.05)}
+main input{width:100%;max-width:600px;font-size:clamp(14px,3vw,16px);border:none;outline:none;background:#fff;border-radius:30px;padding:16px 26px;box-shadow:0 5px 20px rgba(0,0,0,0.05)}
 main input::placeholder{color:var(--text-light)}
-main .tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;overflow-x:auto}
+main .tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;overflow-x:auto;font-size:clamp(14px,3vw,16px)}
 main .tabs::-webkit-scrollbar{display:none}
-main .tab{flex-shrink:0;padding:6px 14px;border-radius:20px;background:#fff;cursor:pointer;font-size:16px;border:1px solid #f1f1f1}
+main .tab{flex-shrink:0;padding:6px 14px;border-radius:20px;background:#fff;cursor:pointer;border:1px solid #f1f1f1}
 main .tab.active{background:var(--primary);color:#fff}
 .content{width:100%;display:flex;flex-direction:column;gap:36px}
 section{width:100%;display:flex;flex-direction:column;gap:22px}
