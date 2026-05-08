@@ -662,7 +662,7 @@
                 "desc": "基于ZFS的免费开源NAS系统。"
             },
             {
-                "title": "openmediavault",
+                "title": "OpenMediaVault",
                 "link": "https://www.openmediavault.org",
                 "icon": "./icon/openmediavault.svg",
                 "tags": ["NAS系统"],
