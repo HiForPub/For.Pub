@@ -309,7 +309,7 @@ function render(newData){
             <div class="cards">
                 ${filtered.map(item=>`
                     <a href="${item.link}" target="_blank" rel="noopener">
-                        <h4>${item.icon ? `<img src="${item.icon}" onerror="this.style.display='none'">` : ""} ${escapeHTML(item.title)}</h4>
+                        <h4>${item.icon ? `<img src="${item.icon}" ${newData ? 'loading="lazy" ' : ''}onerror="this.style.display='none'">` : ""} ${escapeHTML(item.title)}</h4>
                         ${item.tags ? `<div class="tags"> ${Array.isArray(item.tags) ? item.tags.map(tag => `<em>${escapeHTML(tag)}</em>`).join("") : (item.tags ? `<em>${escapeHTML(item.tags)}</em>` : "") } </div>` : ""}
                         ${item.desc ? `<p>${escapeHTML(item.desc)}</p>` : ""}
                     </a>
