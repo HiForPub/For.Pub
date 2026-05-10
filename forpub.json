@@ -695,6 +695,13 @@
                 "desc": "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管。"
             },
             {
+                "title": "雷池WAF",
+                "link": "https://waf-ce.chaitin.cn",
+                "icon": "./icon/safeline.svg",
+                "tags": ["Web防火墙"],
+                "desc": "简单高效的Web应用防火墙，能有效防御SQL注入、XSS等各类Web攻击。"
+            },
+            {
                 "title": "Visual Studio Code",
                 "link": "https://code.visualstudio.com",
                 "icon": "./icon/vscode.svg",
