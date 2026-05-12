@@ -674,6 +674,13 @@
                 "icon": "./icon/unraid.svg",
                 "tags": ["NAS系统","收费"],
                 "desc": "家庭和小型工作室的NAS系统。"
+            },
+            {
+                "title": "Proxmox VE",
+                "link": "https://www.proxmox.com",
+                "icon": "./icon/proxmox.svg",
+                "tags": ["虚拟机系统","PVE"],
+                "desc": "虚拟机和Docker容器的虚拟化环境。"
             }
         ]
     },
