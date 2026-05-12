@@ -723,6 +723,13 @@
                 "desc": "阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。"
             },
             {
+                "title": "Thunderbird",
+                "link": "https://www.thunderbird.net/zh-CN/",
+                "icon": "./icon/thunderbird.svg",
+                "tags": ["邮件客户端"],
+                "desc": "免费开源的跨平台‌邮件与日程管理客户端。"
+            },
+            {
                 "title": "Unsplash",
                 "link": "https://unsplash.com",
                 "icon": "./icon/unsplash.svg",
