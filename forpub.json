@@ -737,6 +737,13 @@
                 "desc": "免费开源的跨平台‌邮件与日程管理客户端。"
             },
             {
+                "title": "balenaEtcher",
+                "link": "https://etcher.balena.io",
+                "icon": "./icon/etcher.svg",
+                "tags": ["U盘启动"],
+                "desc": "免费开源的跨平台USB启动盘制作工具。"
+            },
+            {
                 "title": "Unsplash",
                 "link": "https://unsplash.com",
                 "icon": "./icon/unsplash.svg",
