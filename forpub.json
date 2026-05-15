@@ -744,6 +744,13 @@
                 "desc": "免费开源的跨平台‌邮件与日程管理客户端。"
             },
             {
+                "title": "Rufus",
+                "link": "https://rufus.ie/zh/",
+                "icon": "./icon/rufus.svg",
+                "tags": ["U盘启动"],
+                "desc": "小巧强大的免费U盘启动盘制作工具。"
+            },
+            {
                 "title": "balenaEtcher",
                 "link": "https://etcher.balena.io",
                 "icon": "./icon/etcher.svg",
