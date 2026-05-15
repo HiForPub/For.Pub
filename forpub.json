@@ -723,6 +723,13 @@
                 "desc": "支持超大文件和Unicode的最佳Windows文本编辑器。"
             },
             {
+                "title": "WampServer",
+                "link": "https://www.wampserver.com",
+                "icon": "./icon/wampserver.svg",
+                "tags": ["Web开发环境","LAMP"],
+                "desc": "为Windows系统设计的本地Web开发集成环境‌。"
+            },
+            {
                 "title": "iconfont",
                 "link": "https://www.iconfont.cn",
                 "icon": "./icon/iconfont.svg",
