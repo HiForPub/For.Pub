@@ -751,6 +751,13 @@
                 "desc": "免费开源的跨平台USB启动盘制作工具。"
             },
             {
+                "title": "篡改猴Tampermonkey",
+                "link": "https://www.tampermonkey.net",
+                "icon": "./icon/tampermonkey.svg",
+                "tags": ["浏览器扩展","油猴"],
+                "desc": "功能强大的浏览器用户脚本管理器。"
+            },
+            {
                 "title": "Unsplash",
                 "link": "https://unsplash.com",
                 "icon": "./icon/unsplash.svg",
