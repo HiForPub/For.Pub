@@ -751,6 +751,13 @@
                 "desc": "小巧强大的免费U盘启动盘制作工具。"
             },
             {
+                "title": "WePE",
+                "link": "https://www.wepe.com.cn",
+                "icon": "./icon/wepe.svg",
+                "tags": ["U盘启动","微PE"],
+                "desc": "U盘启动盘制作及PE系统维护工具。"
+            },
+            {
                 "title": "balenaEtcher",
                 "link": "https://etcher.balena.io",
                 "icon": "./icon/etcher.svg",
