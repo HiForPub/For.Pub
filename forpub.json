@@ -239,6 +239,13 @@
                 "desc": "AI音乐创作平台， 通过文字描述直接生成包含人声、旋律和伴奏的原创完整歌曲。"
             },
             {
+                "title": "Codex",
+                "link": "https://chatgpt.com/zh-Hans-CN/codex/",
+                "icon": "./icon/codex.svg",
+                "tags": ["AI编程"],
+                "desc": "ChatGPT提供的AI编程工具，能为开发者自主执行任务的智能体。"
+            },
+            {
                 "title": "Cursor",
                 "link": "https://cursor.com",
                 "icon": "./icon/cursor.svg",
