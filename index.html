@@ -324,6 +324,16 @@ function render(newData){
     }
 }
 
+// 链接跳转 utm_source
+content.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    e.preventDefault();
+    const url = new URL(a.href);
+    url.searchParams.set('utm_source', location.host || 'for.pub');
+    window.open(url,'_blank');
+})
+
 loadData()
 </script>
 </body>
