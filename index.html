@@ -299,10 +299,10 @@ function initTabs(){
 // 搜索
 let searchTimer
 document.getElementById("search").oninput = (e)=>{
-    const value = e.target.value.toLowerCase()
+    let value = e.target.value = e.target.value.trimStart().toLowerCase()
     clearTimeout(searchTimer)
     searchTimer = setTimeout(()=>{
-        keyword = value
+        keyword = value.trim()
         render()
     }, 300)
 }
