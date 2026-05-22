@@ -54,14 +54,14 @@
             {
                 "title": "AstronClaw",
                 "link": "https://agent.xfyun.cn/astron-claw/",
-                "icon": "./icon/astronclaw.png",
+                "icon": "./icon/astronclaw.svg",
                 "tags": ["云端"],
                 "desc": "讯飞星辰Agent智能体开发平台，助力开发者快速搭建生产级智能体。"
             },
             {
                 "title": "腾讯QClaw",
                 "link": "https://qclaw.qq.com",
-                "icon": "./icon/qclaw.png",
+                "icon": "./icon/qclaw.svg",
                 "tags": ["本地"],
                 "desc": "腾讯旗下个人AI助手，可微信远程整理文件、执行复杂任务。"
             },
@@ -89,14 +89,14 @@
             {
                 "title": "360安全龙虾",
                 "link": "https://claw.360.cn",
-                "icon": "./icon/360claw.png",
+                "icon": "./icon/360claw.svg",
                 "tags": ["本地"],
                 "desc": "360旗下安全龙虾，国内首个以“安全模式”为核心设计。"
             },
             {
                 "title": "EasyClaw",
                 "link": "https://easyclaw.com/zh-cn",
-                "icon": "./icon/easyclaw.png",
+                "icon": "./icon/easyclaw.svg",
                 "tags": ["本地","沙盒"],
                 "desc": "猎豹移动旗下AI智能体，提供本地个人版及云端企业版。"
             },
@@ -472,7 +472,7 @@
             {
                 "title": "Ghost",
                 "link": "https://github.com/tryghost/Ghost",
-                "icon": "./icon/ghost.png",
+                "icon": "./icon/ghost.svg",
                 "tags": ["博客","开源","JavaScript"],
                 "desc": "为博客和内容创作设计的‌开源内容管理系统。"
             }
