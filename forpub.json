@@ -645,7 +645,21 @@
                 "link": "https://www.alpinelinux.org",
                 "icon": "./icon/alpinelinux.svg",
                 "tags": ["企业","云计算","Docker"],
-                "desc": "适合嵌入式和容器化的轻量级Linux。"
+                "desc": "嵌入式和容器化的轻量级Linux。"
+            },
+            {
+                "title": "FreeBSD",
+                "link": "https://www.freebsd.org",
+                "icon": "./icon/freebsd.svg",
+                "tags": ["企业","服务器"],
+                "desc": "安全稳定的类Unix操作系统。"
+            },
+            {
+                "title": "ChromeOS",
+                "link": "https://chromeos.google/intl/zh_cn/",
+                "icon": "./icon/chromeos.svg",
+                "tags": ["桌面","企业"],
+                "desc": "Google为企业打造的安全操作系统。"
             },
             {
                 "title": "deepin",
