@@ -578,6 +578,20 @@
         "category": "操作系统",
         "items": [
             {
+                "title": "Windows",
+                "link": "https://www.microsoft.com/zh-cn/windows",
+                "icon": "./icon/windows.svg",
+                "tags": ["桌面","个人","企业"],
+                "desc": "微软开发的主流操作系统。"
+            },
+            {
+                "title": "macOS",
+                "link": "https://www.apple.com.cn/os/macos/",
+                "icon": "./icon/macos.svg",
+                "tags": ["桌面","个人","企业"],
+                "desc": "苹果公司开发的主流操作系统。"
+            },
+            {
                 "title": "Debian",
                 "link": "https://www.debian.org",
                 "icon": "./icon/debian.svg",
