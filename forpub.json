@@ -737,6 +737,13 @@
                 "desc": "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管。"
             },
             {
+                "title": "Gitea",
+                "link": "https://gitea.com",
+                "icon": "./icon/gitea.svg",
+                "tags": ["代码托管"],
+                "desc": "轻量级的自建私有Git代码仓库，无隐私采集、完全免费。"
+            },
+            {
                 "title": "雷池WAF",
                 "link": "https://waf-ce.chaitin.cn",
                 "icon": "./icon/safeline.svg",
