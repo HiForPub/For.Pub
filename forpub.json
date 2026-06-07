@@ -267,6 +267,13 @@
                 "desc": "字节跳动AI原生集成开发环境，支持中文自然语言一键生成完整代码框架。"
             },
             {
+                "title": "ima.copilot",
+                "link": "https://ima.qq.com",
+                "icon": "./icon/ima.svg",
+                "tags": ["AI工作台"],
+                "desc": "腾讯旗下以知识库为核心的AI工作台，提升学习、办公效率。"
+            },
+            {
                 "title": "Ollama",
                 "link": "https://ollama.com",
                 "icon": "./icon/ollama.svg",
