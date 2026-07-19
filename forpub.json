@@ -435,6 +435,30 @@
                 "link": "https://www.name.com/zh-cn/",
                 "icon": "./icon/name.svg",
                 "desc": "成熟老牌海外域名注册商，以管理简单、界面清爽著称。"
+            },
+            {
+                "title": "Gandi",
+                "link": "https://www.gandi.net/zh-Hans",
+                "icon": "./icon/gandi.svg",
+                "desc": "法国老牌域名注册商，注重网络中立性与用户数据安全。"
+            },
+            {
+                "title": "Porkbun",
+                "link": "https://porkbun.com",
+                "icon": "./icon/porkbun.svg",
+                "desc": "独立极客极力推荐的“小猪”注册商，深受站长和开发者喜爱。"
+            },
+            {
+                "title": "Spaceship",
+                "link": "https://www.spaceship.com/zh/",
+                "icon": "./icon/spaceship.svg",
+                "desc": "Namecheap旗下新平台，低价格、现代化的操作界面。"
+            },
+            {
+                "title": "Sedo",
+                "link": "https://sedo.com/cn/",
+                "icon": "./icon/sedo.svg",
+                "desc": "全球最大的老牌域名交易平台，以及“域名停放”赚取广告费。"
             }
         ]
     },
