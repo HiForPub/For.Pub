@@ -775,6 +775,74 @@
         ]
     },
     {
+        "category": "网络测绘",
+        "items": [
+            {
+                "title": "FOFA",
+                "link": "https://fofa.info",
+                "icon": "./icon/fofa.svg",
+                "tags": ["网络安全","网络空间"],
+               "desc": "‌网络空间资产搜索引擎‌，网络安全研究和企业管理"
+            },
+            {
+                "title": "Quake",
+                "link": "https://quake.360.net",
+                "icon": "./icon/quake.svg",
+                "tags": ["网络安全","资产测绘"],
+                "desc": "360旗下网络空间数据主动探测、展示和查询的平台"
+            },
+            {
+                "title": "hunter",
+                "link": "https://hunter.qianxin.com",
+                "icon": "./icon/hunter.svg",
+                "tags": ["网络资产","资产探查"],
+                "desc": "奇安信旗下网络资产搜集平台，助力未知资产发现"
+            },
+            {
+                "title": "Shodan",
+                "link": "https://www.shodan.io",
+                "icon": "./icon/shodan.svg",
+                "tags": ["搜索引擎","网络漏洞"],
+                "desc": "互联网上最可怕的搜索引擎，企业网络漏洞检查"
+            },
+            {
+                "title": "ZoomEye",
+                "link": "https://www.zoomeye.org",
+                "icon": "./icon/zoomeye.svg",
+                "tags": ["态势感知","资产探测"],
+                "desc": "知道创宇旗下网络空间测绘，寻找资产与排查漏洞"
+            },
+            {
+                "title": "Censys",
+                "link": "https://platform.censys.io",
+                "icon": "./icon/censys.svg",
+                "tags": ["资产盘点","安全漏洞"],
+                "desc": "网络空间搜索引擎，网络资产盘点、IT架构分析"
+            },
+            {
+                "title": "Goby",
+                "link": "https://gobysec.net",
+                "icon": "./icon/goby.svg",
+                "tags": ["资产扫描","漏洞扫描"],
+                "desc": "攻击面绘测及自动化漏洞扫描，丰富的实战化漏洞库"
+            },
+            {
+                "title": "GreyNoise",
+                "link": "https://viz.greynoise.io",
+                "icon": "./icon/greynoise.svg",
+                "tags": ["提前预警","洞察威胁"],
+                "desc": "网络安全威胁情报工具，收集分析无差别扫描和攻击"
+            },
+            {
+                "title": "Netlas",
+                "link": "https://app.netlas.io",
+                "icon": "./icon/netlas.svg",
+                "tags": ["漏洞检测","互联网情报"],
+                "desc": "网络资产搜索引擎和互联网情报工具，收集各种底层数据"
+            }
+        ]
+    },
+    {
         "category": "免费资源",
         "items": [
             {
