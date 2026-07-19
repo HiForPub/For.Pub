@@ -364,6 +364,30 @@
                 "link": "https://edgeone.ai/zh",
                 "icon": "./icon/edgeone.svg",
                 "desc": "腾讯云旗下国际边缘节点，全球首个支持中国访问的免费CDN。"
+            },
+            {
+                "title": "Akamai/Linode",
+                "link": "https://www.linode.com/zh/",
+                "icon": "./icon/akamai.svg",
+                "desc": "全球最大且历史最悠久的CDN内容分发网络及云安全服务商。"
+            },
+            {
+                "title": "DigitalOcean",
+                "link": "https://www.digitalocean.com",
+                "icon": "./icon/digitalocean.svg",
+                "desc": "专为开发者和中小团队设计的极简云服务平台。"
+            },
+            {
+                "title": "Vultr",
+                "link": "https://www.vultr.com",
+                "icon": "./icon/vultr.svg",
+                "desc": "美国云计算服务提供商，主打按小时计费和全球多节点。"
+            },
+            {
+                "title": "OVHcloud",
+                "link": "https://www.ovhcloud.com",
+                "icon": "./icon/ovhcloud.svg",
+                "desc": "欧洲最大的云服务提供商，100%符合欧盟数据主权。"
             }
         ]
     },
