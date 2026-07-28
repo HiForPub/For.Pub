@@ -796,7 +796,7 @@
             {
                 "title": "ImmortalWrt",
                 "link": "https://immortalwrt.org",
-                "icon": "./icon/openwrt.svg",
+                "icon": "./icon/immortalwrt.svg",
                 "tags": ["软路由","路由系统"],
                 "desc": "面向大陆用户的开源OpenWrt变体"
             },
