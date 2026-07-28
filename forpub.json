@@ -956,6 +956,13 @@
                 "icon": "./icon/pexels.svg",
                 "tags": ["图片视频","免费商用"],
                 "desc": "免费素材图片和视频，100%免费，任何地方使用无需注明归属。"
+            },
+            {
+                "title": "Web Check",
+                "link": "https://web-check.xyz",
+                "icon": "./icon/web-check.svg",
+                "tags": ["网站分析","公开情报"],
+                "desc": "开源一体化网站分析与公开情报工具，剖析目标站点的安全配置和技术栈等。"
             }
         ]
     }
