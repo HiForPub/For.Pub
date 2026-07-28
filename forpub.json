@@ -637,140 +637,182 @@
                 "link": "https://www.microsoft.com/zh-cn/windows",
                 "icon": "./icon/windows.svg",
                 "tags": ["桌面","个人","企业"],
-                "desc": "微软开发的主流操作系统。"
+                "desc": "微软开发的主流操作系统"
             },
             {
                 "title": "macOS",
                 "link": "https://www.apple.com.cn/os/macos/",
                 "icon": "./icon/macos.svg",
                 "tags": ["桌面","个人","企业"],
-                "desc": "苹果公司开发的主流操作系统。"
+                "desc": "苹果公司开发的主流操作系统"
             },
             {
                 "title": "Debian",
                 "link": "https://www.debian.org",
                 "icon": "./icon/debian.svg",
                 "tags": ["企业","服务器"],
-                "desc": "稳定安全著称的开源服务器操作系统。"
+                "desc": "稳定安全著称的开源服务器操作系统"
             },
             {
                 "title": "Ubuntu",
                 "link": "https://cn.ubuntu.com",
                 "icon": "./icon/ubuntu.svg",
                 "tags": ["企业","个人"],
-                "desc": "流行的Linux桌面发行版与服务器系统。"
+                "desc": "流行的Linux桌面发行版与服务器系统"
             },
             {
                 "title": "Fedora",
                 "link": "https://www.fedoraproject.org/zh-Hans/",
                 "icon": "./icon/fedora.svg",
                 "tags": ["开发者","个人"],
-                "desc": "适合开发者的前沿技术试验操作系统。"
+                "desc": "适合开发者的前沿技术试验操作系统"
             },
             {
                 "title": "AlmaLinux",
                 "link": "https://almalinux.org/zh-hans/",
                 "icon": "./icon/almalinux.svg",
                 "tags": ["企业","服务器"],
-                "desc": "免费替代CentOS的企业级操作系统。"
+                "desc": "免费替代CentOS的企业级操作系统"
             },
             {
                 "title": "Rocky Linux",
                 "link": "https://rockylinux.org/zh-CN",
                 "icon": "./icon/rockylinux.svg",
                 "tags": ["企业","服务器"],
-                "desc": "CentOS平替的开源企业级操作系统。"
+                "desc": "CentOS平替的开源企业级操作系统"
             },
             {
                 "title": "Manjaro",
                 "link": "https://manjaro.org",
                 "icon": "./icon/manjaro.svg",
                 "tags": ["桌面","开发者"],
-                "desc": "灵活易用的桌面级Linux操作系统。"
+                "desc": "灵活易用的桌面级Linux操作系统"
             },
             {
                 "title": "Linux Mint",
                 "link": "https://www.linuxmint.com",
                 "icon": "./icon/linuxmint.svg",
                 "tags": ["桌面","开发者"],
-                "desc": "接近Windows体验的桌面Linux操作系统。"
+                "desc": "接近Windows体验的桌面Linux操作系统"
             },
             {
                 "title": "Arch Linux",
                 "link": "https://archlinux.org",
                 "icon": "./icon/archlinux.svg",
                 "tags": ["桌面","开发者"],
-                "desc": "轻量且灵活的极客Linux操作系统。"
+                "desc": "轻量且灵活的极客Linux操作系统"
             },
             {
                 "title": "Kali Linux",
                 "link": "https://www.kali.org",
                 "icon": "./icon/kali.svg",
                 "tags": ["桌面","网安"],
-                "desc": "安全领域专用的渗透测试神器。"
+                "desc": "安全领域专用的渗透测试神器"
             },
             {
                 "title": "Alpine Linux",
                 "link": "https://www.alpinelinux.org",
                 "icon": "./icon/alpinelinux.svg",
                 "tags": ["企业","云计算","Docker"],
-                "desc": "嵌入式和容器化的轻量级Linux。"
+                "desc": "嵌入式和容器化的轻量级Linux"
             },
             {
                 "title": "FreeBSD",
                 "link": "https://www.freebsd.org",
                 "icon": "./icon/freebsd.svg",
                 "tags": ["企业","服务器"],
-                "desc": "安全稳定的类Unix操作系统。"
+                "desc": "安全稳定的类Unix操作系统"
             },
             {
                 "title": "ChromeOS",
                 "link": "https://chromeos.google/intl/zh_cn/",
                 "icon": "./icon/chromeos.svg",
                 "tags": ["桌面","企业"],
-                "desc": "Google为企业打造的安全操作系统。"
+                "desc": "Google为企业打造的安全操作系统"
             },
             {
                 "title": "deepin",
                 "link": "https://www.deepin.org",
                 "icon": "./icon/deepin.svg",
                 "tags": ["桌面"],
-                "desc": "开源国产的桌面Linux操作系统。"
+                "desc": "开源国产的桌面Linux操作系统"
             },
             {
                 "title": "飞牛fnOS",
                 "link": "https://fnnas.com",
                 "icon": "./icon/fnnas.svg",
                 "tags": ["NAS系统"],
-                "desc": "基于Debian开发的国产免费NAS系统。"
+                "desc": "基于Debian开发的国产免费NAS系统"
             },
             {
                 "title": "TrueNAS",
                 "link": "https://www.truenas.com",
                 "icon": "./icon/truenas.svg",
                 "tags": ["NAS系统"],
-                "desc": "基于ZFS的免费开源NAS系统。"
+                "desc": "基于ZFS的免费开源NAS系统"
             },
             {
                 "title": "OpenMediaVault",
                 "link": "https://www.openmediavault.org",
                 "icon": "./icon/openmediavault.svg",
                 "tags": ["NAS系统"],
-                "desc": "免费开源的轻量级NAS系统。"
+                "desc": "免费开源的轻量级NAS系统"
             },
             {
                 "title": "Unraid",
                 "link": "https://unraid.net",
                 "icon": "./icon/unraid.svg",
                 "tags": ["NAS系统","收费"],
-                "desc": "家庭和小型工作室的NAS系统。"
+                "desc": "家庭和小型工作室的NAS系统"
             },
             {
                 "title": "Proxmox VE",
                 "link": "https://www.proxmox.com",
                 "icon": "./icon/proxmox.svg",
                 "tags": ["虚拟机系统","PVE"],
-                "desc": "虚拟机和Docker容器的虚拟化环境。"
+                "desc": "虚拟机和Docker容器的虚拟化环境"
+            },
+            {
+                "title": "爱快iKuai",
+                "link": "https://www.ikuai8.com",
+                "icon": "./icon/ikuai.svg",
+                "tags": ["软路由","路由系统"],
+                "desc": "免费的国产软路由系统"
+            },
+            {
+                "title": "OpenWrt",
+                "link": "https://openwrt.org",
+                "icon": "./icon/openwrt.svg",
+                "tags": ["软路由","路由系统"],
+                "desc": "开源路由器操作系统。"
+            },
+            {
+                "title": "iStoreOS",
+                "link": "https://istoreos.com",
+                "icon": "./icon/istoreos.svg",
+                "tags": ["软路由","路由系统"],
+                "desc": "国产入门级软路由与轻量化NAS系统"
+            },
+            {
+                "title": "ImmortalWrt",
+                "link": "https://immortalwrt.org",
+                "icon": "./icon/openwrt.svg",
+                "tags": ["软路由","路由系统"],
+                "desc": "面向大陆用户的开源OpenWrt变体"
+            },
+            {
+                "title": "X-Wrt",
+                "link": "https://x-wrt.com",
+                "icon": "./icon/x-wrt.svg",
+                "tags": ["软路由","路由系统"],
+                "desc": "面向普通用户的路由器系统"
+            },
+            {
+                "title": "Kwrt",
+                "link": "https://openwrt.ai",
+                "icon": "./icon/openwrt.svg",
+                "tags": ["软路由","OpenWrt固件"],
+                "desc": "OpenWrt固件在线定制编译"
             }
         ]
     },
