@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="gradient" cx="12.9" cy="79.9" fx="12.9" fy="79.9" r="9.1" gradientTransform="translate(917 813) rotate(-57) scale(9 -14.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcbd72"/>
+      <stop offset=".3" stop-color="#fac371"/>
+      <stop offset=".5" stop-color="#ffa14c"/>
+      <stop offset=".6" stop-color="#eb7a34"/>
+      <stop offset=".8" stop-color="#f0866d"/>
+    </radialGradient>
+    <linearGradient id="gradient_2" x1="-164.5" y1="-689.1" x2="1864.9" y2="-689.1" gradientTransform="translate(18.3 22.1) scale(0 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eb791e"/>
+      <stop offset="1" stop-color="#db694e"/>
+    </linearGradient>
+    <linearGradient id="gradient_3" x1="622.7" y1="-573.1" x2="1091.4" y2="-573.1" gradientTransform="translate(18.3 22.1) scale(0 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcc659"/>
+      <stop offset=".2" stop-color="#ffe366"/>
+      <stop offset=".4" stop-color="#feca50"/>
+      <stop offset=".7" stop-color="#ffe76c"/>
+      <stop offset="1" stop-color="#fcc553"/>
+    </linearGradient>
+    <linearGradient id="gradient_4" x1="53.9" y1="-1094.1" x2="1637.4" y2="-1094.1" gradientTransform="translate(18.3 22.1) scale(0 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a0b39"/>
+      <stop offset=".3" stop-color="#42180e"/>
+      <stop offset=".7" stop-color="#483a00"/>
+      <stop offset="1" stop-color="#310d1d"/>
+    </linearGradient>
+    <linearGradient id="gradient_5" x1="53.9" y1="-1094.1" x2="1637.4" y2="-1094.1" gradientTransform="translate(18.3 22.1) scale(0 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a0b39"/>
+      <stop offset=".3" stop-color="#42180e"/>
+      <stop offset=".7" stop-color="#483a00"/>
+      <stop offset="1" stop-color="#310d1d"/>
+    </linearGradient>
+    <linearGradient id="gradient_6" x1="-206.3" y1="7.4" x2="2037" y2="25.6" gradientTransform="translate(18.3 22.1) scale(0 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#342fbd"/>
+      <stop offset=".2" stop-color="#733cc0"/>
+      <stop offset=".4" stop-color="#8748c2"/>
+      <stop offset=".7" stop-color="#7c80de"/>
+      <stop offset="1" stop-color="#4a306d"/>
+    </linearGradient>
+    <radialGradient id="gradient_7" cx="-24.5" cy="79.4" fx="-24.5" fy="79.4" r="9.1" gradientTransform="translate(-7.8 13) rotate(90) scale(.4 -.4)" gradientUnits="userSpaceOnUse">
+      <stop offset=".6" stop-color="#58239f"/>
+      <stop offset=".8" stop-color="#8e3fe9"/>
+      <stop offset="1" stop-color="#af6fec"/>
+    </radialGradient>
+    <radialGradient id="gradient_8" cx="37.5" cy="71.5" fx="37.5" fy="71.5" r="9.1" gradientTransform="translate(-28.7 11.7) rotate(90) scale(.6 -.6)" gradientUnits="userSpaceOnUse">
+      <stop offset=".6" stop-color="#c32f45"/>
+      <stop offset=".8" stop-color="#f44341"/>
+      <stop offset="1" stop-color="#fc9d9b"/>
+    </radialGradient>
+    <radialGradient id="gradient_9" cx="7.5" cy="181.7" fx="7.5" fy="181.7" r="9.1" gradientTransform="translate(-19.2 9.8) rotate(90) scale(.6 -.6)" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#4da33c"/>
+      <stop offset=".8" stop-color="#63ed47"/>
+      <stop offset="1" stop-color="#70d775"/>
+    </radialGradient>
+    <radialGradient id="gradient_10" cx="-21.2" cy="71.6" fx="-21.2" fy="71.6" r="9.1" gradientTransform="translate(207.6 61.2) rotate(-90) scale(1.7 -2.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fd9b8b"/>
+      <stop offset=".5" stop-color="#f24f3a"/>
+      <stop offset="1" stop-color="#d93318"/>
+    </radialGradient>
+    <radialGradient id="gradient_11" cx="16.7" cy="74.9" fx="16.7" fy="74.9" r="9.1" gradientTransform="translate(270.1 131.5) rotate(-75.9) scale(2.4 -3.2)" gradientUnits="userSpaceOnUse">
+      <stop offset=".3" stop-color="#ffc1a3"/>
+      <stop offset=".8" stop-color="#fd82ab"/>
+      <stop offset="1" stop-color="#df4faa"/>
+    </radialGradient>
+    <radialGradient id="gradient_12" cx="40" cy="159.7" fx="40" fy="159.7" r="9.1" gradientTransform="translate(-15.3 13.4) rotate(90) scale(.5 -.5)" gradientUnits="userSpaceOnUse">
+      <stop offset=".6" stop-color="#4c86d3"/>
+      <stop offset=".8" stop-color="#72ade2"/>
+      <stop offset="1" stop-color="#90bbe3"/>
+    </radialGradient>
+  </defs>
+  <path d="M95.7,56.1c0,25.8-20.3,43.9-45.7,43.9S4.3,81.6,4.3,55.8s1.7-11,10.8-12.2c16.2-2.2,24.8-1.3,35-1.3s24.8-.4,35,1.3c8.4,1.4,10.2,3,10.8,12.5Z" fill="url(#gradient)"/>
+  <path d="M49.9,80c-9.6,0-12.2,1.2-12.2,1.2,0,0,1.2,9.2,12.2,9.2s12.2-9.2,12.2-9.2c0,0-2.6-1.2-12.2-1.2Z" fill="#972021"/>
+  <path d="M88.2,48c0,2.2-17,3.9-38.1,3.9s-38.1-1.8-38.1-3.9,17-3.9,38.1-3.9,38.1,1.8,38.1,3.9Z" fill="url(#gradient_2)"/>
+  <path d="M41.6,51.9c.2-5.1-.2-7.8-1.9-12.4,0,0,3.2-4.1,9.2-4.1s10.2,1,10.2,1c-1,5.7-1.1,9.2-.9,15.5h-16.7Z" fill="url(#gradient_3)"/>
+  <path d="M36.1,77.2c5-2.4,8.5-7.3,8.5-13.4,0-8.7-7-16.4-15.7-16.4s-16,6.7-16,15.4,2.2,9.2,5.7,12.1c2-.8,4.3-1.2,6.8-1.2,4.3,0,8.2,1.4,10.8,3.5ZM63.9,77.2c-5-2.4-8.5-7.3-8.5-13.4,0-8.7,7-16.4,15.7-16.4s16,6.7,16,15.4-2.2,9.2-5.7,12.1c-2-.8-4.3-1.2-6.8-1.2-4.3,0-8.2,1.4-10.8,3.5Z" fill="#fff"/>
+  <path d="M29.9,72.7c5.3,0,9.6-4.3,9.6-9.6s-4.3-9.6-9.6-9.6-9.6,4.3-9.6,9.6,4.3,9.6,9.6,9.6Z" fill="url(#gradient_4)"/>
+  <path d="M70.1,72.7c-5.3,0-9.6-4.3-9.6-9.6s4.3-9.6,9.6-9.6,9.6,4.3,9.6,9.6-4.3,9.6-9.6,9.6Z" fill="url(#gradient_5)"/>
+  <path d="M54.4,3.8C49.6,3.8,47.8-.2,40.4,0,32.5,0,28.8,4.4,24.9,7.9c-.7.6-3.9,2.4-5.5,3.1-6.7,3-11.8,7.3-11.8,13.8s6,12.8,13.3,12.8,2.4-.2,3.5-.4c3,3.6,7.6,5.7,12.7,5.9,8,.3,10.6-5.2,15.2-2.9,3.2,1.6,4.7,2.9,9.7,2.9s8.6-1.8,10.2-3.8c3.1-3.6,7.8-1.4,10.8-1.4,6.4,0,11.6-5,11.6-11.1s-5.2-11.1-11.6-11.1-5.1.4-5.8-2.4c-1.2-4.6-6.9-9.9-15-9.9s-6,.3-7.8.3Z" fill="url(#gradient_6)"/>
+  <path d="M23.7,4.3c0,1.8-1.5,3.2-3.2,3.2s-3.2-1.5-3.2-3.2h0c0-1.8,1.5-3.2,3.2-3.2s3.2,1.5,3.2,3.2Z" fill="url(#gradient_7)"/>
+  <path d="M19.6,34.1c0,3-2.4,5.5-5.5,5.5s-5.5-2.4-5.5-5.5,2.4-5.5,5.5-5.5,5.5,2.4,5.5,5.5Z" fill="url(#gradient_8)"/>
+  <path d="M91.6,14.2c0,2.9-2.4,5.3-5.3,5.3s-5.3-2.4-5.3-5.3,2.4-5.3,5.3-5.3,5.3,2.4,5.3,5.3Z" fill="url(#gradient_9)"/>
+  <path d="M40.5,80.6c1.9-.3,4.8-.5,9.4-.5s7,.2,8.9.5c-.5,2-4.4,2.8-9.2,2.8s-8.5-.7-9.1-2.7Z" fill="#fff"/>
+  <path d="M50,96.2c6.9,0,8-7,8.2-8.7.2-1.4-.6-2.1-1.4-2.6-.8-.5-3.2-.9-6.8-.9s-6,.4-6.8.9c-.8.5-1.6,1.2-1.4,2.6.2,1.7,1.3,8.7,8.2,8.7Z" fill="url(#gradient_10)"/>
+  <path d="M54,41.5c-2-1.3-4.8-1.4-6.8-.2-2.6,1.7-5.8,2.7-9.2,2.7-9.2,0-16.7-7.3-16.7-16.2s7.5-16.2,16.7-16.2,8.9,1.8,11.9,4.8c1.7,1.7,4.5,2.1,6.7,1.2,1.8-.7,3.6-1.1,5.5-1.1,7.8,0,14.2,6.1,14.2,13.7s-6.3,13.7-14.2,13.7-5.8-.9-8.1-2.5Z" fill="url(#gradient_11)"/>
+  <path d="M70.1,33.6c0,2.5-2.1,4.6-4.6,4.6s-4.6-2.1-4.6-4.6,2.1-4.6,4.6-4.6,4.6,2.1,4.6,4.6Z" fill="url(#gradient_12)"/>
+</svg>

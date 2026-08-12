@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>为你导航 For.Pub - 独立开发者的实用工具箱！</title>
+<meta name="keywords" content="For.Pub,为你导航,网址导航,导航网站">
+<meta name="description" content="为你导航（ For.Pub ）是一个面向独立开发者的免费开源网址导航。收集国内外对程序员开发方面的优质网站，其中包括常用的开发工具和实用网址等。不断更新收录优秀的开发者网址导航。">
+<meta name="author" content="Fanly">
+<link rel="canonical" href="https://for.pub">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "name": "为你导航",
+            "alternateName": ["For.Pub", "ForPub"],
+            "url": "https://for.pub"
+        },
+        {
+            "@type": "Organization",
+            "name": "For.Pub",
+            "url": "https://for.pub",
+            "sameAs": [
+                "https://github.com/HiForPub"
+            ],
+            "logo": "https://for.pub/apple-touch-icon.png",
+            "email": "hi@for.pub"
+        },
+        {
+            "@type": "ImageObject",
+            "contentUrl": "https://for.pub/apple-touch-icon.png",
+            "license": "https://for.pub",
+            "acquireLicensePage": "https://for.pub",
+            "copyrightNotice": "For.Pub",
+            "creditText": "For.Pub",
+            "creator": {
+                "@type": "Organization",
+                "name": "For.Pub"
+            }
+        }
+    ]
+}
+</script>
+<style>
+:root {
+  --primary: #2c8b30;       /* 主色调 (按钮、标题、激活态) */
+  --bg-base: #f5f6fa;       /* 基础背景 (页面、页脚) */
+  --text-main: #666666;     /* 主要文字颜色 */
+  --text-light: #999999;    /* 次要文字/描述颜色 */
+  --bg-tag: color-mix(in srgb, var(--primary) 10%, white); /* 标签背景：主色调的 10% 透明度 */
+}
+*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+html{height:100%;scrollbar-width:none}
+body{display:flex;flex-direction:column;min-height:100%;background:var(--bg-base);color:var(--text-main)}
+header{display:flex;justify-content:space-between;align-items:center;width:100%;max-width:1920px;padding:16px 20px;margin:0 auto}
+header h1{font-size:22px;font-weight:400}
+header h1 a{display:flex;align-items:center;gap:8px;color:var(--primary)}
+header h1 img{width:22px}
+header nav{display:flex;align-items:center;gap:20px}
+header nav a{color:var(--text-main)}
+header nav a:last-child{background:var(--primary);color:#fff;padding:6px 12px;border-radius:6px}
+main{width:100%;max-width:1520px;margin:0 auto;padding:50px 20px;display:flex;flex-direction:column;align-items:center;gap:42px;flex:1}
+main h2{font-size:clamp(20px,5vw,32px);background:linear-gradient(90deg,color-mix(in srgb,var(--primary),white 50%),color-mix(in srgb,var(--primary),black 20%));-webkit-background-clip:text;color:transparent;cursor:pointer}
+main input{width:100%;max-width:600px;font-size:clamp(14px,3vw,16px);border:none;outline:none;background:#fff;border-radius:30px;padding:16px 26px;box-shadow:0 5px 20px rgba(0,0,0,0.05)}
+main input::placeholder{color:var(--text-light)}
+main .tabs{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;overflow-x:auto;font-size:clamp(14px,3vw,16px)}
+main .tabs::-webkit-scrollbar{display:none}
+main .tab{flex-shrink:0;padding:6px 14px;border-radius:20px;background:#fff;cursor:pointer;border:1px solid #f1f1f1}
+main .tab.active{background:var(--primary);color:#fff}
+.content{width:100%;display:flex;flex-direction:column;gap:36px}
+section{width:100%;display:flex;flex-direction:column;gap:22px}
+section h3{display:flex;align-items:center;width:100%;color:var(--primary);font-size:20px;font-weight:500}
+section h3::after{content:"";flex:1;height:1px;margin-left:15px;background-image:linear-gradient(to right,rgba(108,99,255,0.1),transparent);background-repeat:no-repeat;background-size:100% 100%}
+.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+@media(max-width:599px){.cards{grid-template-columns:1fr}}
+.cards a{display:flex;flex-direction:column;gap:10px;color:inherit;background:#fff;padding:14px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.05);transition:transform 0.2s,box-shadow 0.2s}
+@media(hover:hover){.cards a:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.08)}}
+.cards a:active{transform:scale(0.98)}
+.cards img{width:26px;height:26px;border-radius:4px;flex-shrink:0}
+.cards h4{display:flex;align-items:center;gap:12px;font-size:16px}
+.cards .tags{display:flex;flex-wrap:wrap;gap:6px}
+.cards em{width:max-content;font-size:12px;padding:2px 8px;border-radius:10px;background:var(--bg-tag,#f0edff);color:var(--primary)}
+.cards p{font-size:14px;color:var(--text-light);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.empty{text-align:center;padding:40px 0;color:var(--text-light);font-size:14px}
+footer{background:var(--bg-base);padding:20px;text-align:center;line-height:2}
+footer a{color:var(--primary)}
+section,.tabs{opacity:0;transform:translateY(10px);animation:fadeIn .25s ease forwards}
+@keyframes fadeIn {to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1><a href="/"><img src="./favicon.svg">为你导航</a></h1>
+    <nav><a href="https://github.com/HiForPub/For.Pub/issues" target="_blank">投稿</a><a href="https://github.com/HiForPub/For.Pub" target="_blank">部署</a></nav>
+</header>
+
+<main>
+    <h2 onclick="location.reload()">独立开发者 实用工具箱</h2>
+    <input id="search" placeholder="搜索 标题 / 内容 / 域名" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+    <div class="tabs" id="tabs"></div>
+    <div class="content" id="content"></div> 
+</main>
+
+<footer>
+    <p>声明：导航链接为第三方网站，请注意甄别！</p>
+    <p>© 2026 <a href="https://for.pub">为你导航</a></p>
+</footer>
+
+<script>
+let link = "./forpub.json" // 加载的 JSON 数据
+let data = []
+let ALLTEXT = "全部"
+let categories = [ALLTEXT]
+let active = ALLTEXT
+let keyword = ""
+
+// 默认数据 / 置顶推荐
+data = [
+    {
+        category: "热门推荐",
+        items: [
+            {
+                title: "Hermes Agent",
+                link: "https://hermes-agent.nousresearch.com",
+                icon: "./icon/hermesagent.svg",
+                tags: ["本地部署","开源"],
+                desc: "开源自主AI智能体，具备自我学习与进化。",
+            },
+            {
+                title: "OpenClaw",
+                link: "https://openclaw.ai",
+                icon: "./icon/openclaw.svg",
+                tags: ["本地部署","开源"],
+                desc: "本地优先的自主个人AI龙虾，可调用多种大型语言模型。",
+            },
+            {
+                title: "DeepSeek",
+                link: "https://chat.deepseek.com",
+                icon: "./icon/deepseek.svg",
+                tags: ["聊天机器人"],
+                desc: "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务。"
+            },
+            {
+                title: "Ollama",
+                link: "https://ollama.com",
+                icon: "./icon/ollama.svg",
+                tags: ["本地部署","开源"],
+                desc: "‌开源跨平台大模型工具‌，在本地运行、管理和与大型语言模型进行交互。"
+            },
+            {
+                title: "Chatbox",
+                link: "https://chatboxai.app/zh",
+                icon: "./icon/chatboxai.svg",
+                tags: ["AI客户端","免费开源"],
+                desc: "开源免费的全平台AI客户端，支持众多先进的AI模型和API。"
+            },
+            {
+                title: "WordPress",
+                link: "https://cn.wordpress.org",
+                icon: "./icon/wordpress.svg",
+                tags: ["博客","开源","PHP"],
+               desc: "全球数百万网站的首选开源发布平台。",
+            },
+            {
+                title: "Cloudflare",
+                link: "https://www.cloudflare.com/zh-cn/",
+                icon: "./icon/cloudflare.svg",
+                tags: ["CDN","免费","赛博菩萨"],
+                desc: "免费CDN内容分发网络和边缘计算，提升网站访问速度并抵御网络攻击。"
+            },
+            {
+                title: "EdgeOne",
+                link: "https://edgeone.ai/zh",
+                icon: "./icon/edgeone.svg",
+                tags: ["CDN","免费"],
+                desc: "腾讯云旗下国际边缘节点，全球首个支持中国访问的免费CDN。"
+            },
+            {
+                title: "Debian",
+                link: "https://www.debian.org",
+                icon: "./icon/debian.svg",
+                tags: ["企业级","Linux系统"],
+                desc: "稳定安全著称的开源服务器操作系统。"
+            },
+            {
+                title: "GitHub",
+                link: "https://github.com",
+                icon: "./icon/github.svg",
+                tags: ["代码托管"],
+                desc: "微软旗下的开源代码托管平台，提供版本控制、协作开发和项目管理功能。"
+            },
+            {
+                title: "码云Gitee",
+                link: "https://gitee.com",
+                icon: "./icon/gitee.svg",
+                tags: ["代码托管"],
+                desc: "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管。"
+            },
+            {
+                title: "iconfont",
+                link: "https://www.iconfont.cn",
+                icon: "./icon/iconfont.svg",
+                tags: ["矢量图标"],
+                desc: "阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。"
+            },
+            {
+                title: "Unsplash",
+                link: "https://unsplash.com",
+                icon: "./icon/unsplash.svg",
+                tags: ["摄影图库","免费商用"],
+                desc: "高品质摄影图片库，以其照片的艺术感、高清画质和自由的商业使用许可而闻名。"
+            },
+        ]
+    },
+]
+
+// 🔒 XSS 防护函数
+function escapeHTML(str){
+    return String(str).replace(/[&<>"']/g, s => ({
+        "&":"&amp;",
+        "<":"&lt;",
+        ">":"&gt;",
+        '"':"&quot;",
+        "'":"&#39;"
+    }[s]))
+}
+
+// 🌐 URL 校验
+function isValidURL(url){
+    try{
+        new URL(url)
+        return true
+    }catch{
+        return false
+    }
+}
+
+// 获取数据
+let isLoaded = false; 
+async function loadData(){
+    categories = [ALLTEXT, ...data.map(d=>d.category)];
+    active = decodeURIComponent(location.hash.replace("#", "")) || ALLTEXT;
+    initTabs();
+    render();
+    // 异步追加数据
+    try {
+        const res = await fetch(link);
+        if(res.ok){
+            const json = await res.json();
+            if(json && json.length){
+                data = mergeData(data, json);
+                categories = [...new Set([ALLTEXT, ...data.map(d=>d.category)])];
+                initTabs();
+                render(json);
+            }
+        }
+    } catch(err){
+        console.warn(err);
+    } finally {
+        isLoaded = true;
+    }
+}
+
+// 合并数据
+function mergeData(localData, remoteData) {
+    const map = new Map();
+    for (const group of localData) {
+        if (group && group.category) {
+            map.set(group.category, structuredClone(group));
+        }
+    }
+    for (const group of remoteData) {
+        if (group && group.category) {
+            map.set(group.category, structuredClone(group));
+        }
+    }
+    return [...map.values()];
+}
+
+// 初始化 tabs
+function initTabs(){
+    const tabsEl = document.getElementById("tabs")
+    tabsEl.innerHTML = ""
+    categories.forEach(c=>{
+        const el = document.createElement("div")
+        el.className = "tab"
+        el.innerText = c
+        if(c===active) el.classList.add("active")
+        el.onclick = ()=>{
+            active=c
+            history.replaceState(null, "", c === ALLTEXT ? location.pathname : `#${encodeURIComponent(c)}`)
+            document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"))
+            el.classList.add("active")
+            render()
+        }
+        tabsEl.appendChild(el)
+    })
+}
+
+// 搜索
+let searchTimer
+document.getElementById("search").oninput = (e)=>{
+    let value = e.target.value = e.target.value.trimStart().toLowerCase()
+    clearTimeout(searchTimer)
+    searchTimer = setTimeout(()=>{
+        keyword = value.trim()
+        render()
+    }, 300)
+}
+
+// 渲染函数
+const content = document.getElementById("content")
+function render(newData){
+    const source = newData || data
+    // 全量渲染，清空
+    if(!newData){
+        content.innerHTML = ""
+    }
+    let hasResult = false
+    const seen = new Set()
+
+    source.forEach(group=>{
+        if(active !== ALLTEXT && group.category !== active) return
+
+        const filtered = group.items
+            .filter(item => item.title && item.link && isValidURL(item.link))
+            .filter(item => {
+                if(seen.has(item.link)) return false
+                seen.add(item.link)
+                return true
+            })
+            .filter(item =>
+                item.title.toLowerCase().includes(keyword) ||
+                (item.desc || "").toLowerCase().includes(keyword) ||
+                (item.link || "").toLowerCase().includes(keyword) ||
+                (Array.isArray(item.tags) ? item.tags.some(tag => tag.toLowerCase().includes(keyword)) : (item.tags || "").toLowerCase().includes(keyword))
+            )
+
+        if(filtered.length===0) return
+        hasResult = true
+
+        const section = document.createElement("section")
+        section.innerHTML = `
+            <h3>${escapeHTML(group.category)}</h3>
+            <div class="cards">
+                ${filtered.map(item=>`
+                    <a href="${item.link}" target="_blank" rel="noopener">
+                        <h4>${item.icon ? `<img src="${item.icon}" ${newData ? 'loading="lazy" ' : ''}onerror="this.style.display='none'">` : ""} ${escapeHTML(item.title)}</h4>
+                        ${item.tags ? `<div class="tags"> ${Array.isArray(item.tags) ? item.tags.map(tag => `<em>${escapeHTML(tag)}</em>`).join("") : (item.tags ? `<em>${escapeHTML(item.tags)}</em>` : "") } </div>` : ""}
+                        ${item.desc ? `<p>${escapeHTML(item.desc)}</p>` : ""}
+                    </a>
+                `).join("")}
+            </div>
+        `
+        content.appendChild(section)
+    })
+
+    if (isLoaded && !hasResult){
+        content.innerHTML = `<div class="empty">没有相关内容</div>`
+    }
+}
+
+// 链接跳转 utm_source
+content.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    e.preventDefault();
+    const url = new URL(a.href);
+    url.searchParams.set('utm_source', location.host || 'for.pub');
+    window.open(url,'_blank');
+})
+
+loadData()
+</script>
+</body>
+</html>
