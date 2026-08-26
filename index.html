@@ -115,7 +115,7 @@ section,.tabs{opacity:0;transform:translateY(10px);animation:fadeIn .25s ease fo
 </footer>
 
 <script>
-let link = './' + location.pathname.split('/').pop().replace(/\.\w+$/,'.json'); // 根据当前文件名加载对应的 JSON 数据
+let link = './' + (location.pathname.split('/').pop() || 'index.html').replace(/\.\w+$/, '.json'); // 根据当前文件名加载对应的 JSON 数据
 let data = []
 let ALLTEXT = "全部"
 let categories = [ALLTEXT]
