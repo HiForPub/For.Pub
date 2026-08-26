@@ -7,6 +7,8 @@
 <meta name="keywords" content="For.Pub,为你导航,网址导航,导航网站">
 <meta name="description" content="为你导航（ For.Pub ）是一个面向独立开发者的免费开源网址导航。收集国内外对程序员开发方面的优质网站，其中包括常用的开发工具和实用网址等。不断更新收录优秀的开发者网址导航。">
 <meta name="author" content="Fanly">
+<meta name="copyright" content="TearSnow">
+<meta name="referrer" content="always">
 <link rel="canonical" href="https://for.pub">
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -113,7 +115,7 @@ section,.tabs{opacity:0;transform:translateY(10px);animation:fadeIn .25s ease fo
 </footer>
 
 <script>
-let link = './' + location.pathname.split('/').pop().replace(/\.\w+$/,'.json'); // 根据当前文件名加载对应的 JSON 数据
+let link = './' + (location.pathname.split('/').pop() || 'index.html').replace(/\.\w+$/, '.json'); // 根据当前文件名加载对应的 JSON 数据
 let data = []
 let ALLTEXT = "全部"
 let categories = [ALLTEXT]
@@ -130,92 +132,92 @@ data = [
                 link: "https://hermes-agent.nousresearch.com",
                 icon: "./icon/hermesagent.svg",
                 tags: ["本地部署","开源"],
-                desc: "开源自主AI智能体，具备自我学习与进化。",
+                desc: "开源自主AI智能体，具备自我学习与进化"
             },
             {
                 title: "OpenClaw",
                 link: "https://openclaw.ai",
                 icon: "./icon/openclaw.svg",
                 tags: ["本地部署","开源"],
-                desc: "本地优先的自主个人AI龙虾，可调用多种大型语言模型。",
+                desc: "本地优先的自主个人AI龙虾，可调用多种大型语言模型"
             },
             {
                 title: "DeepSeek",
                 link: "https://chat.deepseek.com",
                 icon: "./icon/deepseek.svg",
                 tags: ["聊天机器人"],
-                desc: "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务。"
+                desc: "幻方量化旗下深度求索，助力编程代码开发、创意写作、文件处理等任务"
             },
             {
                 title: "Ollama",
                 link: "https://ollama.com",
                 icon: "./icon/ollama.svg",
                 tags: ["本地部署","开源"],
-                desc: "‌开源跨平台大模型工具‌，在本地运行、管理和与大型语言模型进行交互。"
+                desc: "‌开源跨平台大模型工具‌，在本地运行、管理和与大型语言模型进行交互"
             },
             {
                 title: "Chatbox",
                 link: "https://chatboxai.app/zh",
                 icon: "./icon/chatboxai.svg",
                 tags: ["AI客户端","免费开源"],
-                desc: "开源免费的全平台AI客户端，支持众多先进的AI模型和API。"
+                desc: "开源免费的全平台AI客户端，支持众多先进的AI模型和API"
             },
             {
                 title: "WordPress",
                 link: "https://cn.wordpress.org",
                 icon: "./icon/wordpress.svg",
                 tags: ["博客","开源","PHP"],
-               desc: "全球数百万网站的首选开源发布平台。",
+                desc: "全球数百万网站的首选开源发布平台"
             },
             {
                 title: "Cloudflare",
                 link: "https://www.cloudflare.com/zh-cn/",
                 icon: "./icon/cloudflare.svg",
                 tags: ["CDN","免费","赛博菩萨"],
-                desc: "免费CDN内容分发网络和边缘计算，提升网站访问速度并抵御网络攻击。"
+                desc: "免费CDN内容分发网络和边缘计算，提升网站访问速度并抵御网络攻击"
             },
             {
                 title: "EdgeOne",
                 link: "https://edgeone.ai/zh",
                 icon: "./icon/edgeone.svg",
                 tags: ["CDN","免费"],
-                desc: "腾讯云旗下国际边缘节点，全球首个支持中国访问的免费CDN。"
+                desc: "腾讯云旗下国际边缘节点，全球首个支持中国访问的免费CDN"
             },
             {
                 title: "Debian",
                 link: "https://www.debian.org",
                 icon: "./icon/debian.svg",
                 tags: ["企业级","Linux系统"],
-                desc: "稳定安全著称的开源服务器操作系统。"
+                desc: "稳定安全著称的开源服务器操作系统"
             },
             {
                 title: "GitHub",
                 link: "https://github.com",
                 icon: "./icon/github.svg",
                 tags: ["代码托管"],
-                desc: "微软旗下的开源代码托管平台，提供版本控制、协作开发和项目管理功能。"
+                desc: "微软旗下的开源代码托管平台，提供版本控制、协作开发和项目管理功能"
             },
             {
                 title: "码云Gitee",
                 link: "https://gitee.com",
                 icon: "./icon/gitee.svg",
                 tags: ["代码托管"],
-                desc: "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管。"
+                desc: "国内代码托管平台，支持Git和SVN，提供免费的私有仓库托管"
             },
             {
                 title: "iconfont",
                 link: "https://www.iconfont.cn",
                 icon: "./icon/iconfont.svg",
                 tags: ["矢量图标"],
-                desc: "阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。"
+                desc: "阿里巴巴矢量图标库，提供矢量图标下载、在线存储、格式转换等功能"
             },
             {
                 title: "Unsplash",
                 link: "https://unsplash.com",
                 icon: "./icon/unsplash.svg",
                 tags: ["摄影图库","免费商用"],
-                desc: "高品质摄影图片库，以其照片的艺术感、高清画质和自由的商业使用许可而闻名。"
-            },
+                desc: "高品质摄影图片库，以其照片的艺术感、高清画质和自由的商业使用许可而闻名"
+            }
         ]
     },
 ]
