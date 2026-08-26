@@ -109,11 +109,11 @@ section,.tabs{opacity:0;transform:translateY(10px);animation:fadeIn .25s ease fo
 
 <footer>
     <p>声明：导航链接为第三方网站，请注意甄别！</p>
-    <p>© 2026 <a href="https://for.pub">为你导航</a></p>
+    <p>© 2026 <a href="https://for.pub">为你导航</a> / <a href="https://tearsnow.com" target="_blank">TearSnow</a></p>
 </footer>
 
 <script>
-let link = "./forpub.json" // 加载的 JSON 数据
+let link = './' + location.pathname.split('/').pop().replace(/\.\w+$/,'.json'); // 根据当前文件名加载对应的 JSON 数据
 let data = []
 let ALLTEXT = "全部"
 let categories = [ALLTEXT]
