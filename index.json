@@ -525,6 +525,13 @@
                 "desc": "国内最知名的论坛社区开源软件 Discuz!"
             },
             {
+                "title": "Hexo",
+                "link": "https://hexo.io/zh-cn/",
+                "icon": "./icon/hexo.svg",
+                "tags": ["博客","开源","Node.js"],
+                "desc": "Node.js驱动的高效博客框架"
+            },
+            {
                 "title": "Ghost",
                 "link": "https://github.com/tryghost/Ghost",
                 "icon": "./icon/ghost.svg",
