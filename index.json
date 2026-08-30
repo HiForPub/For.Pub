@@ -537,6 +537,13 @@
                 "icon": "./icon/ghost.svg",
                 "tags": ["博客","开源","JavaScript"],
                 "desc": "为博客和内容创作设计的‌开源内容管理系统"
+            },
+            {
+                "title": "Shopify",
+                "link": "https://www.shopify.com/zh",
+                "icon": "./icon/shopify.svg",
+                "tags": ["电商","SaaS"],
+                "desc": "全球领先的一站式云端电商独立站搭建平台"
             }
         ]
     },
