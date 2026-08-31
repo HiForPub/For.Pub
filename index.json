@@ -1113,8 +1113,15 @@
                 "title": "WampServer",
                 "link": "https://www.wampserver.com",
                 "icon": "./icon/wampserver.svg",
-                "tags": ["Web开发环境","LAMP"],
-                "desc": "为Windows系统设计的本地Web开发集成环境‌"
+                "tags": ["Web开发环境","WAMP"],
+                "desc": "Windows平台上的免费PHP开发环境集成包"
+            },
+            {
+                "title": "XAMPP",
+                "link": "https://www.apachefriends.org/zh_cn/",
+                "icon": "./icon/xampp.svg",
+                "tags": ["Web开发环境"],
+                "desc": "跨平台免费的Web开发环境集成包"
             },
             {
                 "title": "iconfont",
