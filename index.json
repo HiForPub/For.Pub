@@ -1103,6 +1103,13 @@
                 "desc": "高度可配置的文本编辑器，适用于程序员和高级用户"
             },
             {
+                "title": "DBeaver",
+                "link": "https://dbeaver.io",
+                "icon": "./icon/dbeaver.svg",
+                "tags": ["数据库管理工具"],
+                "desc": "免费开源的跨平台数据库管理工具，支持多种数据库类型"
+            },
+            {
                 "title": "WampServer",
                 "link": "https://www.wampserver.com",
                 "icon": "./icon/wampserver.svg",
