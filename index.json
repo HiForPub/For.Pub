@@ -897,6 +897,34 @@
                 "desc": "为关系网络数据设计的开源图数据库"
             },
             {
+                "title": "TiDB",
+                "link": "https://www.pingcap.com",
+                "icon": "./icon/tidb.svg",
+                "tags": ["分布式数据库"],
+                "desc": "开源的分布式关系型数据库"
+            },
+            {
+                "title": "CouchDB",
+                "link": "https://couchdb.apache.org",
+                "icon": "./icon/couchdb.svg",
+                "tags": ["文档型数据库"],
+                "desc": "开源的文档型NoSQL数据库"
+            },
+            {
+                "title": "DuckDB",
+                "link": "https://duckdb.org",
+                "icon": "./icon/duckdb.svg",
+                "tags": ["分析数据库"],
+                "desc": "高性能的嵌入式分析型数据库"
+            },
+            {
+                "title": "HBase",
+                "link": "https://hbase.apache.org",
+                "icon": "./icon/hbase.svg",
+                "tags": ["分布式数据库"],
+                "desc": "基于Hadoop的分布式NoSQL数据库"
+            },
+            {
                 "title": "Redis",
                 "link": "https://redis.io",
                 "icon": "./icon/redis.svg",
