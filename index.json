@@ -565,11 +565,11 @@
                 "desc": "现代化的Linux服务器运维管理面板"
             },
             {
-                "title": "GMSSH",
+                "title": "极目桌面/GMSSH",
                 "link": "https://www.gm.cn",
-                "icon": "./icon/gmssh.svg",
+                "icon": "./icon/gm.svg",
                 "tags": ["Linux","免费/收费"],
-                "desc": "桌面级的Linux SSH可视化管理工具"
+                "desc": "Linux服务器桌面化和可视化管理工具"
             },
             {
                 "title": "AMH面板",
