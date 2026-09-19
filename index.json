@@ -84,7 +84,7 @@
                 "link": "https://www.workbuddy.cn",
                 "icon": "./icon/workbuddy.svg",
                 "tags": ["本地"],
-                "desc": "腾讯旗下AI工作台，一句话指令自主规划并交付完整结果"
+                "desc": "腾讯旗下AI办公工作台，一句话指令自主规划并交付完整结果"
             },
             {
                 "title": "360安全龙虾",
@@ -647,6 +647,53 @@
                 "icon": "./icon/rancher.svg",
                 "tags": ["K8s面板","Kubernetes"],
                 "desc": "开源企业级多集群Kubernetes管理平台"
+            }
+        ]
+    },
+    {
+        "category": "优质开源",
+        "items": [
+            {
+                "title": "AdGuard Home",
+                "link": "https://github.com/AdguardTeam/Adguardhome",
+                "icon": "./icon/adguard.svg",
+                "tags": ["自建DNS","广告拦截"],
+                "desc": "网络级广告拦截与隐私保护自建DNS工具"
+            },
+            {
+                "title": "Uptime Kuma",
+                "link": "https://github.com/louislam/uptime-kuma",
+                "icon": "./icon/uptimekuma.svg",
+                "tags": ["网站监控","健康检查"],
+                "desc": "简洁易用的开源自建服务器监控工具"
+            },
+            {
+                "title": "Umami",
+                "link": "https://github.com/umami-software/umami",
+                "icon": "./icon/umami.svg",
+                "tags": ["网站分析","数据统计"],
+                "desc": "隐私优先的开源自建网站流量分析工具"
+            },
+            {
+                "title": "Caddy",
+                "link": "https://github.com/caddyserver/caddy",
+                "icon": "./icon/caddy.svg",
+                "tags": ["Web服务器","反向代理"],
+                "desc": "现代化的Web服务器与反向代理"
+            },
+            {
+                "title": "Nextcloud",
+                "link": "https://github.com/nextcloud/server",
+                "icon": "./icon/nextcloud.svg",
+                "tags": ["文件存储","私有云"],
+                "desc": "开源的自托管云存储和云协作平台"
+            },
+            {
+                "title": "Home Assistant",
+                "link": "https://github.com/home-assistant/core",
+                "icon": "./icon/homeassistant.svg",
+                "tags": ["智能家居","自动化"],
+                "desc": "开源家庭自动化与智能设备管理平台"
             }
         ]
     },
