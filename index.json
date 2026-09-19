@@ -81,7 +81,7 @@
             },
             {
                 "title": "WorkBuddy",
-                "link": "https://www.codebuddy.cn/work/",
+                "link": "https://www.workbuddy.cn",
                 "icon": "./icon/workbuddy.svg",
                 "tags": ["本地"],
                 "desc": "腾讯旗下AI工作台，一句话指令自主规划并交付完整结果"
