@@ -694,6 +694,20 @@
                 "icon": "./icon/homeassistant.svg",
                 "tags": ["智能家居","自动化"],
                 "desc": "开源家庭自动化与智能设备管理平台"
+            },
+            {
+                "title": "SmartDNS",
+                "link": "https://github.com/pymumu/smartdns",
+                "icon": "./icon/github.svg",
+                "tags": ["DNS加速","本地DNS"],
+                "desc": "本地DNS加速服务器，多上游测速返回最快IP"
+            },
+            {
+                "title": "mosdns",
+                "link": "https://github.com/IrineSistiana/mosdns",
+                "icon": "./icon/github.svg",
+                "tags": ["DNS分流","DNS转发"],
+                "desc": "高性能DNS分流转发器"
             }
         ]
     },
