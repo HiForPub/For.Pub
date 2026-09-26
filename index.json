@@ -80,13 +80,6 @@
                 "desc": "腾讯旗下AI办公工作台，一句话指令自主规划并交付完整结果"
             },
             {
-                "title": "360安全龙虾",
-                "link": "https://claw.360.cn",
-                "icon": "./icon/360claw.svg",
-                "tags": ["本地"],
-                "desc": "360旗下安全龙虾，国内首个以“安全模式”为核心设计"
-            },
-            {
                 "title": "EasyClaw",
                 "link": "https://easyclaw.com/zh-cn",
                 "icon": "./icon/easyclaw.svg",
