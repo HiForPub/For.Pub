@@ -694,6 +694,13 @@
                 "icon": "./icon/github.svg",
                 "tags": ["DNS分流","DNS转发"],
                 "desc": "高性能DNS分流转发器"
+            },
+            {
+                "title": "OxiDNS",
+                "link": "https://github.com/svenshi/oxidns",
+                "icon": "./icon/github.svg",
+                "tags": ["DNS分流","DNS转发"],
+                "desc": "面向复杂网络的高性能DNS策略编排引擎"
             }
         ]
     },
