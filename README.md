@@ -5,3 +5,7 @@
 **演示地址**：https://for.pub
 
 为你导航 For.Pub 为免费开源项目，不提供任何的收费或定制服务，欢迎大家用于搭建自己的网址导航。
+
+## 赞助商
+
+[TearSnow](https://tearsnow.com)、[泪雪网](https://leixue.com)、[垒阅网](https://leiue.com)
